@@ -21,6 +21,26 @@ view: tik_custom_tiktok_table {
     type: number
     sql: ${TABLE}.CONVERSIONS ;;
   }
+  dimension: cost {
+    type: number
+    sql: ${TABLE}.COST ;;
+  }
+  dimension: cost_per_1000_reached {
+    type: number
+    sql: ${TABLE}.COST_PER_1000_REACHED ;;
+  }
+  dimension: cost_per_conversion {
+    type: number
+    sql: ${TABLE}.COST_PER_CONVERSION ;;
+  }
+  dimension: cost_per_real_time_conversion {
+    type: number
+    sql: ${TABLE}.COST_PER_REAL_TIME_CONVERSION ;;
+  }
+  dimension: cost_per_result {
+    type: number
+    sql: ${TABLE}.COST_PER_RESULT ;;
+  }
   dimension: cpc {
     type: number
     sql: ${TABLE}.CPC ;;
@@ -40,9 +60,17 @@ view: tik_custom_tiktok_table {
     datatype: date
     sql: ${TABLE}.DATE ;;
   }
+  dimension: engagements {
+    type: number
+    sql: ${TABLE}.ENGAGEMENTS ;;
+  }
   dimension: impressions {
     type: number
     sql: ${TABLE}.IMPRESSIONS ;;
+  }
+  dimension: month {
+    type: string
+    sql: ${TABLE}.MONTH ;;
   }
   dimension: reach {
     type: number
@@ -54,6 +82,6 @@ view: tik_custom_tiktok_table {
   }
   measure: count {
     type: count
-    drill_fields: [advertiser_name, campaign_name, ad_group_name]
+    drill_fields: [advertiser_name, ad_group_name, campaign_name]
   }
 }
