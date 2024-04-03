@@ -10,10 +10,5 @@ datagroup: ads_tiktok_default_datagroup {
 
 persist_with: ads_tiktok_default_datagroup
 
-explore: tik_geo {}
-
-explore: tik_age_gender {}
-
-explore: tik_ad {}
 
 explore: tik_custom_tiktok_table {}
