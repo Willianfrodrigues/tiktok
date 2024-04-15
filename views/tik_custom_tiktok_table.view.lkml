@@ -79,7 +79,18 @@ view: tik_custom_tiktok_table {
   dimension: video_play_actions {
     type: number
     sql: ${TABLE}.VIDEO_PLAY_ACTIONS ;;
+    }
+
+  measure: total_impressoes {
+    type: sum
+    sql: ${TABLE}.IMPRESSIONS ;;
   }
+
+  measure: total_cliques {
+    type: sum
+    sql: ${TABLE}.CLICKS ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [advertiser_name, ad_group_name, campaign_name]
