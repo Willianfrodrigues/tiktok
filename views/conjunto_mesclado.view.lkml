@@ -5,10 +5,6 @@ view: conjunto_mesclado {
     type: string
     sql: ${TABLE}.AGE ;;
   }
-  dimension: alcance {
-    type: number
-    sql: ${TABLE}.alcance ;;
-  }
   dimension: campaign_name {
     type: string
     sql: ${TABLE}.CAMPAIGN_NAME ;;
@@ -28,9 +24,9 @@ view: conjunto_mesclado {
     type: string
     sql: ${TABLE}.origem ;;
   }
-  dimension: thruplay {
+  dimension: total_alcance {
     type: number
-    sql: ${TABLE}.thruplay ;;
+    sql: ${TABLE}.total_alcance ;;
   }
   dimension: total_cliques {
     type: number
@@ -39,6 +35,10 @@ view: conjunto_mesclado {
   dimension: total_impressoes {
     type: number
     sql: ${TABLE}.total_impressoes ;;
+  }
+  dimension: total_thruplay {
+    type: number
+    sql: ${TABLE}.total_thruplay ;;
   }
   measure: count {
     type: count
