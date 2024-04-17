@@ -51,5 +51,15 @@ view: conjunto_mesclado {
     sql: ${TABLE}.total_cliques ;;
   }
 
+  measure: alcance {
+    type: sum
+    sql: ${TABLE}.total_alcance ;;
+  }
+
+  measure: thruplay {
+    type: sum
+    sql: ${TABLE}.total_thruplay;;
+  }
+
 
 }
