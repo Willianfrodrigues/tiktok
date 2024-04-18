@@ -1,13 +1,5 @@
 view: conjunto_mesclado {
   sql_table_name: `looker-integrations-402615.tiktok_ads.Conjunto_mesclado` ;;
-  drill_fields: [id]
-
-
-  dimension: id {
-    primary_key: yes
-    type: number
-    sql: ${TABLE}.id ;;
-  }
 
   dimension: campaign_id {
     type: string
@@ -31,6 +23,14 @@ view: conjunto_mesclado {
   dimension: total_alcance {
     type: number
     sql: ${TABLE}.total_alcance ;;
+  }
+  dimension: total_clicks {
+    type: number
+    sql: ${TABLE}.total_clicks ;;
+  }
+  dimension: total_impressions {
+    type: number
+    sql: ${TABLE}.total_impressions ;;
   }
   dimension: total_thruplay {
     type: number
