@@ -1,6 +1,12 @@
 view: conjunto_mesclado {
   sql_table_name: `looker-integrations-402615.tiktok_ads.Conjunto_mesclado` ;;
 
+  dimension: id {
+    primary_key: yes
+    type: number
+    sql: ${TABLE}.id ;;
+  }
+
   dimension: campaign_id {
     type: string
     sql: ${TABLE}.CAMPAIGN_ID ;;
