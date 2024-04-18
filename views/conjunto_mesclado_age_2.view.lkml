@@ -48,4 +48,10 @@ view: conjunto_mesclado_age_2 {
     type: count
     drill_fields: [campaign_name]
   }
+
+  measure: impressoes {
+    type: sum
+    sql: ${TABLE}.total_impressoes ;;
+
+  }
 }
