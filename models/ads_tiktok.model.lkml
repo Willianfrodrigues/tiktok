@@ -15,9 +15,9 @@ persist_with: ads_tiktok_default_datagroup
 explore: tik_custom_tiktok_table {}
 
 explore: conjunto_mesclado {
-  join: conjunto_mesclado_age {
+  join: conjunto_mesclado_age_2 {
     type: left_outer
-    sql_on: ${conjunto_mesclado.campaign_name} = ${conjunto_mesclado_age.campaign_name} ;;
+    sql_on: ${conjunto_mesclado.campaign_id} = ${conjunto_mesclado_age_2.campaign_id} ;;
     relationship: many_to_one
   }
 }
