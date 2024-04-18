@@ -44,7 +44,7 @@ view: conjunto_mesclado {
 
   measure: cliques {
     type: sum
-    sql: ${TABLE}.total_cliques ;;
+    sql: ${TABLE}.total_clicks ;;
   }
 
   measure: count {
