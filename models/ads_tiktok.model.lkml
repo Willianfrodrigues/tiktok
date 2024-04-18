@@ -13,3 +13,4 @@ persist_with: ads_tiktok_default_datagroup
 
 explore: tik_custom_tiktok_table {}
 explore: conjunto_mesclado {}
+explore: conjunto_mesclado_age {}
