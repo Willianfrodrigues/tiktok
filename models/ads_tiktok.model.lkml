@@ -17,7 +17,7 @@ explore: tik_custom_tiktok_table {}
 explore: conjunto_mesclado {
   join: conjunto_mesclado_age_2 {
     type: left_outer
-    sql_on: ${conjunto_mesclado.campaign_id} = ${conjunto_mesclado_age_2.campaign_id} ;;
+    sql_on: ${conjunto_mesclado.campaign_name} = ${conjunto_mesclado.campaign_name} ;;
     relationship: many_to_one
   }
 }
