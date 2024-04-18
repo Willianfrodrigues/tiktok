@@ -1,6 +1,6 @@
 view: conjunto_mesclado_age {
   sql_table_name: `looker-integrations-402615.tiktok_ads.conjunto_mesclado_age` ;;
-
+  drill_fields: [id]
 
   dimension: id {
     primary_key: yes

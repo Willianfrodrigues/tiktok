@@ -1,5 +1,7 @@
 view: conjunto_mesclado {
   sql_table_name: `looker-integrations-402615.tiktok_ads.Conjunto_mesclado` ;;
+  drill_fields: [id]
+
 
   dimension: id {
     primary_key: yes
