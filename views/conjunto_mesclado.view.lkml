@@ -47,6 +47,16 @@ view: conjunto_mesclado {
     sql: ${TABLE}.total_clicks ;;
   }
 
+  measure: thruplay {
+  type: sum
+  sql: ${TABLE}.total_thruplay ;;
+  }
+
+  measure: alcance {
+    type: sum
+    sql: ${TABLE}.total_alcance ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [campaign_name]
