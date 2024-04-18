@@ -11,6 +11,15 @@ datagroup: ads_tiktok_default_datagroup {
 persist_with: ads_tiktok_default_datagroup
 
 
+
 explore: tik_custom_tiktok_table {}
-explore: conjunto_mesclado {}
+
+explore: conjunto_mesclado {
+  join: conjunto_mesclado_age {
+    type: left_outer
+    sql_on: ${conjunto_mesclado.campaign_name} = ${conjunto_mesclado_age.campaign_name} ;;
+    relationship: many_to_one
+  }
+}
+
 explore: conjunto_mesclado_age {}
