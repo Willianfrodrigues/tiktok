@@ -19,8 +19,9 @@ view: tik_custom_tiktok_table {
   }
   dimension: conversions {
     type: number
-    sql: ${TABLE}.CONVERSIONS ;;
+    sql: COALESCE(${TABLE}.CONVERSIONS, 0) ;;
   }
+
   dimension: cost {
     type: number
     sql: ${TABLE}.COST ;;
