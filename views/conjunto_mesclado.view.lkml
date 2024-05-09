@@ -42,6 +42,12 @@ view: conjunto_mesclado {
     sql: ${TABLE}.total_impressions ;;
   }
 
+  measure:  total_cadastros {
+    type: sum
+    sql: ${TABLE}.total_cadastros ;;
+  }
+
+
   measure: cliques {
     type: sum
     sql: ${TABLE}.total_clicks ;;
