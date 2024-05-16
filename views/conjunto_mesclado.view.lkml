@@ -63,6 +63,13 @@ view: conjunto_mesclado {
     sql: ${TABLE}.total_alcance ;;
   }
 
+  measure: custo {
+    type: sum
+    sql: ${TABLE}.total_cost ;;
+  }
+
+
+
   measure: count {
     type: count
     drill_fields: [campaign_name]
