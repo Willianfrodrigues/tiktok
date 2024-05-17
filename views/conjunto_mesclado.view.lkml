@@ -58,6 +58,8 @@ view: conjunto_mesclado {
   sql: ${TABLE}.total_thruplay ;;
   }
 
+
+
   measure: alcance {
     type: sum
     sql: ${TABLE}.total_alcance ;;
@@ -68,6 +70,18 @@ view: conjunto_mesclado {
     sql: ${TABLE}.total_cost ;;
   }
 
+  dimension: Campanhas_fort {
+    type: string
+    sql: CASE
+          WHEN ${campaign_name} LIKE '%RAIA DROGASIL%' THEN 'Needs Baby'
+          WHEN ${campaign_name} LIKE 'STANLEYS %' OR ${campaign_name} LIKE 'StanleysHair' THEN 'StanleysHair''
+          WHEN ${campaign_name} LIKE '%NEMESIS%' THEN 'Wella - Koleston Nemesis'
+          WHEN ${campaign_name} LIKE '%EDUCATION%' THEN 'Wella | Education (3º Flight)'
+          WHEN ${campaign_name} LIKE '%SOFT COLOR%' THEN 'Wella | Soft Color'
+          WHEN ${campaign_name} LIKE '%MSD | META | TRÁFEGO | HPV GARDASIL 9%' THEN 'MSD Gardasil | 2024'
+          WHEN ${campaign_name} LIKE '%LIMPPANO%' THEN 'Limpanno'
+      END ;;
+  }
 
 
   measure: count {
