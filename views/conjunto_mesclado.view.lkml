@@ -74,7 +74,7 @@ view: conjunto_mesclado {
     type: string
     sql: CASE
           WHEN ${campaign_name} LIKE '%RAIA DROGASIL%' THEN 'Needs Baby'
-          WHEN ${campaign_name} LIKE 'STANLEYS %' OR ${campaign_name} LIKE 'StanleysHair' THEN 'StanleysHair''
+          WHEN ${campaign_name} LIKE 'STANLEYS %' OR ${campaign_name} LIKE 'StanleysHair' THEN 'StanleysHair'
           WHEN ${campaign_name} LIKE '%NEMESIS%' THEN 'Wella - Koleston Nemesis'
           WHEN ${campaign_name} LIKE '%EDUCATION%' THEN 'Wella | Education (3º Flight)'
           WHEN ${campaign_name} LIKE '%SOFT COLOR%' THEN 'Wella | Soft Color'
