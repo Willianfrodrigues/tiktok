@@ -96,9 +96,10 @@ view: conjunto_mesclado {
 
   #------------------------------------------TESTES------------------------------
 
-  measure: media_prevista_impressao {
+  measure: media_impressoes_previstas {
     type: number
-    sql: ${impressoes} / ${dias_campanha} ;;
+    sql: ${total_impressions} / ${dias_campanha} ;; # Substitua dias_campanha_total pelo número total de dias da campanha
+    value_format_name: decimal_2
   }
 
 
