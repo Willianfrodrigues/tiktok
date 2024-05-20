@@ -83,6 +83,17 @@ view: conjunto_mesclado {
       END ;;
   }
 
+  dimension: dias_campanha {
+    type: number
+    sql: CASE
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 30 // Substitua 30 pelo número real de dias da campanha 'Needs Baby'
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 45 // Substitua 45 pelo número real de dias da campanha 'StanleysHair'
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 60 // e assim por diante para cada campanha
+        // Adicione mais condições para outras campanhas
+        ELSE NULL
+      END ;;
+  }
+
 
   measure: count {
     type: count
