@@ -94,21 +94,13 @@ view: conjunto_mesclado {
       END ;;
   }
 
-  measure: media_impressoes_realizadas {
-    type: average
-    sql: (${TABLE}.impressoes) ;;
+  #------------------------------------------TESTES------------------------------
+
+  measure: media_prevista_impressao {
+    type: number
+    sql: ${impressoes} / ${dias_campanha} ;;
   }
 
-  measure: media_impressoes_previstas {
-    type: number
-    sql: ${impressoes} / ${dias_campanha};;
-  }
-
-  measure: comparacao_media {
-    type: number
-    sql: CASE WHEN ${media_impressoes_previstas} != 0 THEN ${media_impressoes_realizadas} / ${media_impressoes_previstas} ELSE NULL END ;;
-    value_format_name: decimal_2
-  }
 
   measure: count {
     type: count
