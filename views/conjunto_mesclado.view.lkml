@@ -94,9 +94,9 @@ view: conjunto_mesclado {
       END ;;
   }
 
-  measure: media_impressoes_realizadas {
-    type: average
-    sql: ${TABLE}.impressoes ;;
+  dimension: media_impressoes_realizadas {
+    type: number
+    sql: AVG(${TABLE}.impressoes) ;;
     value_format_name: decimal_2
   }
 
