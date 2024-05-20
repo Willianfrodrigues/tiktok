@@ -97,19 +97,16 @@ view: conjunto_mesclado {
   measure: media_impressoes_realizadas {
     type: number
     sql: ${impressoes} / COUNT(${date_raw}) ;;
-    value_format_name: decimal_2
   }
 
   measure: media_impressoes_previstas {
     type: number
     sql: ${total_impressions} / ${dias_campanha} ;;
-    value_format_name: decimal_2
   }
 
   measure: comparacao_media {
     type: number
     sql: ${media_impressoes_realizadas} / NULLIF(${media_impressoes_previstas}, 0) ;;
-    value_format_name: percent_1
   }
 
 
