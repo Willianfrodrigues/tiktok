@@ -94,13 +94,20 @@ view: conjunto_mesclado {
       END ;;
   }
 
+
+  dimension: Impressoes_contratadas{
+    type: number
+    sql: CASE
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 25000
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 36500
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 25000
+        ELSE 1
+      END ;;
+  }
+
   #------------------------------------------TESTES------------------------------
 
-  measure: media_impressoes_previstas {
-    type: number
-    sql: ${total_impressions} / ${dias_campanha} ;; # Substitua dias_campanha_total pelo número total de dias da campanha
-    value_format_name: decimal_2
-  }
+
 
 
   measure: count {
