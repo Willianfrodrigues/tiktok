@@ -102,7 +102,6 @@ view: conjunto_mesclado {
   measure: media_impressoes_previstas {
     type: number
     sql: ${total_impressions} / ${dias_campanha} ;;
-    value_format_name: decimal_2
   }
 
   measure: comparacao_media {
