@@ -108,10 +108,7 @@ view: conjunto_mesclado {
 
 
   #------------------------------------------TESTES------------------------------
-  measure: primeira_impressao {
-    type: min
-    sql: ${TABLE}.DATE ;;
-  }
+
 
 
 
