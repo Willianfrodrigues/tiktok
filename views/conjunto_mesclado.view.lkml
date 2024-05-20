@@ -80,6 +80,7 @@ view: conjunto_mesclado {
           WHEN ${campaign_name} LIKE '%SOFT COLOR%' THEN 'Wella | Soft Color'
           WHEN ${campaign_name} LIKE '%MSD | META | TRÁFEGO | HPV GARDASIL 9%' THEN 'MSD Gardasil | 2024'
           WHEN ${campaign_name} LIKE '%LIMPPANO%' THEN 'Limpanno'
+          ELSE 'Outra Campanha'
       END ;;
   }
 
@@ -89,7 +90,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Needs Baby' THEN 30
         WHEN ${Campanhas_fort} = 'StanleysHair' THEN 45
         WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 60
-        ELSE NULL
+        ELSE 1
       END ;;
   }
 
@@ -100,7 +101,11 @@ view: conjunto_mesclado {
 
   measure: media_impressoes_previstas {
     type: number
-    sql: ${total_impressions} / ${dias_campanha} ;;
+    sql: CASE
+           WHEN ${dias_campanha} = 0 THEN NULL
+           ELSE ${total_impressions} / ${dias_campanha}
+         END ;;
+    value_format_name: decimal_2
   }
 
   measure: comparacao_media {
