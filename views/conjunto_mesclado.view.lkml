@@ -101,7 +101,7 @@ view: conjunto_mesclado {
 
   measure: media_impressoes_previstas {
     type: number
-    sql: ${total_impressions} / ${dias_campanha};;
+    sql: ${impressoes} / ${dias_campanha};;
   }
 
   measure: comparacao_media {
