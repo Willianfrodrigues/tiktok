@@ -101,11 +101,7 @@ view: conjunto_mesclado {
 
   measure: media_impressoes_previstas {
     type: number
-    sql: CASE
-           WHEN ${dias_campanha} = 0 THEN NULL
-           ELSE ${total_impressions} / ${dias_campanha}
-         END ;;
-    value_format_name: decimal_2
+    sql: ${total_impressions} / ${dias_campanha};;
   }
 
   measure: comparacao_media {
