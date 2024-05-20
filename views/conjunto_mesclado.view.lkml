@@ -95,9 +95,9 @@ view: conjunto_mesclado {
   }
 
   measure: media_impressoes_realizadas {
-    type: number
-    sql: ${impressoes} / COUNT(${date_raw}) ;;
-
+    type: average
+    sql: ${TABLE}.impressoes ;;
+    value_format_name: decimal_2
   }
 
   measure: media_impressoes_previstas {
@@ -108,9 +108,9 @@ view: conjunto_mesclado {
 
   measure: comparacao_media {
     type: number
-    sql: ${media_impressoes_realizadas} / NULLIF(${media_impressoes_previstas}, 0) ;;
+    sql: CASE WHEN ${media_impressoes_previstas} != 0 THEN ${media_impressoes_realizadas} / ${media_impressoes_previstas} ELSE NULL END ;;
+    value_format_name: decimal_2
   }
-
 
   measure: count {
     type: count
