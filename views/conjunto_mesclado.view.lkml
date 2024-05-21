@@ -141,6 +141,11 @@ view: conjunto_mesclado {
     sql: MAX(${date_date}) ;;
   }
 
+  measure: dias_para_finalizacao {
+    type: number
+    sql: diff_days(${fim_campanha}, ${max_date_date}) ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [campaign_name]
