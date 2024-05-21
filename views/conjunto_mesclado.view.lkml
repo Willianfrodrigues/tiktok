@@ -133,7 +133,7 @@ view: conjunto_mesclado {
 
   dimension: dias_restantes_para_fim_campanha {
     type: number
-    sql: DATE_DIFF(${fim_campanha}, CURRENT_DATE()) ;;
+     sql_start: TIMESTAMP_DIFF(${fim_campanha}, CURRENT_DATE(), DAY) ;;
   }
 
 
