@@ -120,6 +120,22 @@ view: conjunto_mesclado {
       END ;;
   }
 
+  dimension: Inicio_campanha {
+    type: date
+
+    sql: CASE
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN '2024-06-22'
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN '2024-06-22'
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN '2024-06-22'
+        ELSE '2024-06-22'
+      END ;;
+  }
+
+  dimension: dias_restantes_para_fim_campanha {
+    type: number
+    sql: DATE_DIFF(${fim_campanha}, CURRENT_DATE()) ;;
+  }
+
 
 
 
