@@ -136,8 +136,10 @@ view: conjunto_mesclado {
      sql_start: TIMESTAMP_DIFF(${fim_campanha}, CURRENT_DATE(), DAY) ;;
   }
 
-
-
+  measure: max_date_date {
+    type: date
+    sql: MAX(${date_date}) ;;
+  }
 
   measure: count {
     type: count
