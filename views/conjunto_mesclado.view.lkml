@@ -80,7 +80,7 @@ view: conjunto_mesclado {
           WHEN ${campaign_name} LIKE '%SOFT COLOR%' THEN 'Wella | Soft Color'
           WHEN ${campaign_name} LIKE '%LIMPANNO%' THEN 'Limpanno'
           WHEN ${campaign_name} LIKE '%MSD | META | TRÁFEGO | HPV GARDASIL 9%' THEN 'MSD Gardasil | 2024'
-          WHEN ${campaign_name} LIKE '%LIMPANNO% 'OR ${campaign_name} LIKE 'Limpanno'  THEN 'Limpanno'
+          WHEN ${campaign_name} LIKE '%LIMPANNO%' OR ${campaign_name} LIKE '%Limpanno%'  THEN 'Limpanno'
           ELSE 'Outra Campanha'
       END ;;
   }
