@@ -85,9 +85,9 @@ view: conjunto_mesclado {
   }
 
   dimension: dias_campanha {
-    type: number
+    type: date
     sql: CASE
-        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 30
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 22/05/2024
         WHEN ${Campanhas_fort} = 'StanleysHair' THEN 45
         WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 60
         ELSE 1
@@ -109,7 +109,15 @@ view: conjunto_mesclado {
 
   #------------------------------------------TESTES------------------------------
 
-
+  dimension: fim_campanha {
+    type: date
+    sql: CASE
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN '2024-06-22' TO '2024-07-22'
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN '2024-06-22' TO '2024-08-15'
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN '2024-06-22' TO '2024-09-05'
+        ELSE '2024-06-22' TO '2024-07-01' -- Padrão para outras campanhas
+      END ;;
+  }
 
 
 
