@@ -88,8 +88,8 @@ view: conjunto_mesclado {
     type: date
     sql: CASE
         WHEN ${Campanhas_fort} = 'Needs Baby' THEN 22/05/2024
-        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 45
-        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 60
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 22/05/2024
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 22/05/2024
         ELSE 1
       END ;;
   }
@@ -101,6 +101,16 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Needs Baby' THEN 25000
         WHEN ${Campanhas_fort} = 'StanleysHair' THEN 36500
         WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 25000
+        ELSE 1
+      END ;;
+  }
+
+  dimension: cpm_contratado{
+    type: number
+    sql: CASE
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 60
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 40
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 25
         ELSE 1
       END ;;
   }
