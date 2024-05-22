@@ -89,9 +89,9 @@ view: conjunto_mesclado {
   dimension: Impressoes_contratadas{
     type: number
     sql: CASE
-        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 25000
-        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 36500
-        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 25000
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 250000
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 365000
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 250000
         ELSE 1
       END ;;
   }
