@@ -84,15 +84,6 @@ view: conjunto_mesclado {
       END ;;
   }
 
-  dimension: dias_campanha {
-    type: date
-    sql: CASE
-        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 22/05/2024
-        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 22/05/2024
-        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 22/05/2024
-        ELSE 1
-      END ;;
-  }
 
 
   dimension: Impressoes_contratadas{
@@ -134,26 +125,17 @@ view: conjunto_mesclado {
     type: date
 
     sql: CASE
-        WHEN ${Campanhas_fort} = 'Needs Baby' THEN '2024-06-22'
-        WHEN ${Campanhas_fort} = 'StanleysHair' THEN '2024-06-22'
-        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN '2024-06-22'
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN '2024-05-24'
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN '2024-02-28'
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN '2024-03-20'
         ELSE '2024-06-22'
       END ;;
   }
 
-  dimension: dias_restantes_para_fim_campanha {
-    type: number
-     sql_start: TIMESTAMP_DIFF(${fim_campanha}, CURRENT_DATE(), DAY) ;;
-  }
 
   measure: max_date_date {
     type: date
     sql: MAX(${date_date}) ;;
-  }
-
-  measure: dias_para_finalizacao {
-    type: number
-    sql: diff_days(${fim_campanha}, ${max_date_date}) ;;
   }
 
   measure: count {
