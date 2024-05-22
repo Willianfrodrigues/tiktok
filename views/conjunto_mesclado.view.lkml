@@ -95,7 +95,7 @@ view: conjunto_mesclado {
   }
 
 
-  dimension: Impressoes_contratadas{
+  measure: Impressoes_contratadas{
     type: number
     sql: CASE
         WHEN ${Campanhas_fort} = 'Needs Baby' THEN 25000
