@@ -138,7 +138,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN  0.15
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN  0.15
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 0.15
-        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  0.15
+        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  0.17
         ELSE 015
        END ;;
   }
