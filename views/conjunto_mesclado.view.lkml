@@ -125,7 +125,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN  590000
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 188334
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  2000000
-        ELSE 1
+        ELSE 0
       END ;;
   }
 
