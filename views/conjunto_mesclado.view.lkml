@@ -129,7 +129,10 @@ view: conjunto_mesclado {
       END ;;
   }
 
-
+  measure: total_PI {
+    type: sum
+    sql: ${PI} ;;
+  }
 
   #------------------------------------------TESTES------------------------------
 
