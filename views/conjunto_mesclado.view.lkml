@@ -142,8 +142,8 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN '2024-06-30'
         WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN '2024-06-30'
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN '2024-05-31'
-        WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-05-15'
-        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-10-08'
+        WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-10-08'
+        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-11-30'
 
         ELSE '2024-06-22'
       END ;;
