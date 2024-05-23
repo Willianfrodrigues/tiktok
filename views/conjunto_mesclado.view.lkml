@@ -118,13 +118,13 @@ view: conjunto_mesclado {
   dimension: PI{
     type: number
     sql: CASE
-         WHEN ${Campanhas_fort} = 'Needs Baby' THEN 108.000
-        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 200.000
-        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 260.000
-        WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN  222.628
-        WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN  590.000
-        WHEN ${Campanhas_fort} = 'Limpanno' THEN 188.334
-        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  2.000000
+         WHEN ${Campanhas_fort} = 'Needs Baby' THEN 108000
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 200000
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 260000
+        WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN  222628
+        WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN  590000
+        WHEN ${Campanhas_fort} = 'Limpanno' THEN 188334
+        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  2000000
         ELSE 0
       END ;;
   }
