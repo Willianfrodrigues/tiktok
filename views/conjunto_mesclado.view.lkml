@@ -129,6 +129,20 @@ view: conjunto_mesclado {
       END ;;
   }
 
+  measure: percent_to_apply {
+    type: number
+    sql: CASE
+        WHEN ${Campanhas_fort} = 'Needs Baby' THEN 0.15
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN 0.15
+        WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 0.15
+        WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN  0.15
+        WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN  0.15
+        WHEN ${Campanhas_fort} = 'Limpanno' THEN 0.15
+        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  0.15
+         ELSE 0.15
+       END ;;
+  }
+
 
   #------------------------------------------TESTES------------------------------
 
