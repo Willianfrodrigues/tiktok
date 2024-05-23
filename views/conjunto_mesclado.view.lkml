@@ -124,7 +124,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN  222.628
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN  590.000
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 188.334
-        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  2.000.000
+        WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  2.000000
         ELSE 0
       END ;;
   }
