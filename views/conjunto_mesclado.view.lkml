@@ -78,8 +78,9 @@ view: conjunto_mesclado {
           WHEN ${campaign_name} LIKE '%NEMESIS%' THEN 'Wella - Koleston Nemesis'
           WHEN ${campaign_name} LIKE '%EDUCATION%' THEN 'Wella | Education (3º Flight)'
           WHEN ${campaign_name} LIKE '%SOFT COLOR%' THEN 'Wella | Soft Color'
-          WHEN ${campaign_name} LIKE '%GARDASIL 9%' THEN 'MSD Gardasil | 2024'
+          WHEN ${campaign_name} LIKE '%GARDASIL%' THEN 'MSD Gardasil | 2024'
           WHEN ${campaign_name} LIKE '%LIMPANNO%' OR ${campaign_name} LIKE '%Limpanno%'  THEN 'Limpanno'
+          WHEN ${campaign_name} LIKE '%NIOXIN%' THEN 'Nioxin'
           ELSE 'Outra Campanha'
       END ;;
   }
@@ -96,7 +97,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN 21851852
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 4185201
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN 33333333
-
+        WHEN ${Campanhas_fort} = 'Nioxin' THEN 1444444
         ELSE 1
       END ;;
   }
@@ -111,6 +112,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN 27
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 45
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN 60
+        WHEN ${Campanhas_fort} = 'Nioxin' THEN 27
         ELSE 1
       END ;;
   }
@@ -125,6 +127,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN  590000
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 188334
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  2000000
+        WHEN ${Campanhas_fort} = 'Nioxin' THEN 39000
         ELSE 0
       END ;;
   }
@@ -139,6 +142,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN  0.15
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 0.15
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  0.17
+        WHEN ${Campanhas_fort} = 'Nioxin' THEN 0.15
         ELSE 015
        END ;;
   }
@@ -157,7 +161,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN '2024-06-30'
         WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-10-08'
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-11-30'
-
+        WHEN ${Campanhas_fort} = 'Nioxin' THEN '2024-06-30'
         ELSE '2024-06-22'
       END ;;
   }
@@ -173,7 +177,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN '2024-02-01'
         WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-05-15'
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-03-01'
-
+        WHEN ${Campanhas_fort} = 'Nioxin' THEN '2024-05-01'
         ELSE '2024-06-22'
       END ;;
   }
