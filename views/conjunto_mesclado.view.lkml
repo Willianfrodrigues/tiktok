@@ -132,7 +132,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 188334
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  2000000
         WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 39000
-        WHEN ${Campanhas_fort} = 'Wella Care' THEN R$ 60000
+        WHEN ${Campanhas_fort} = 'Wella Care' THEN 60000
         ELSE 0
       END ;;
   }
