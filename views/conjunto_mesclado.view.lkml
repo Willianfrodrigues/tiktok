@@ -162,11 +162,11 @@ view: conjunto_mesclado {
 
     sql: CASE
         WHEN ${Campanhas_fort} = 'Needs Baby' THEN '2024-05-25'
-        WHEN ${Campanhas_fort} = 'StanleysHair' THEN '2024-09-07'
+        WHEN ${Campanhas_fort} = 'StanleysHair' THEN '2024-07-09'
         WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN '2024-06-30'
         WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN '2024-06-30'
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN '2024-06-30'
-        WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-10-08'
+        WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-08-12'
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-11-30'
         WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-06-30'
         WHEN ${Campanhas_fort} = 'Wella Care' THEN '2024-06-30'
@@ -185,7 +185,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN '2024-02-01'
         WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-05-15'
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-03-01'
-        WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-05-01'
+        WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-05-20'
         WHEN ${Campanhas_fort} = 'Wella Care' THEN '2024-05-27'
         ELSE '2024-06-22'
       END ;;
@@ -196,15 +196,15 @@ view: conjunto_mesclado {
   dimension: PI2 {
     type: number
     sql: CASE
-           WHEN \${Campanhas_fort} = 'Needs Baby' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 108000
-           WHEN \${Campanhas_fort} = 'StanleysHair' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 200000
-           WHEN \${Campanhas_fort} = 'Wella - Koleston Nemesis' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 260000
-           WHEN \${Campanhas_fort} = 'Wella | Education (3º Flight)' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 222628
-           WHEN \${Campanhas_fort} = 'Wella | Soft Color' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 590000
-           WHEN \${Campanhas_fort} = 'Limpanno' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 188334
-           WHEN \${Campanhas_fort} = 'MSD Gardasil | 2024' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 2000000
-           WHEN \${Campanhas_fort} = 'Wella Nioxin' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 39000
-           WHEN \${Campanhas_fort} = 'Wella Care' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 60000
+           WHEN ${Campanhas_fort} = 'Needs Baby' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 108000
+           WHEN ${Campanhas_fort} = 'StanleysHair' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 200000
+           WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 260000
+           WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 222628
+           WHEN ${Campanhas_fort} = 'Wella | Soft Color' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 590000
+           WHEN ${Campanhas_fort} = 'Limpanno' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 188334
+           WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 2000000
+           WHEN ${Campanhas_fort} = 'Wella Nioxin' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 39000
+           WHEN ${Campanhas_fort} = 'Wella Care' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 60000
            ELSE 0
          END ;;
   }
