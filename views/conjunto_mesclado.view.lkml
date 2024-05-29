@@ -196,18 +196,19 @@ view: conjunto_mesclado {
   dimension: PI2 {
     type: number
     sql: CASE
-           WHEN ${Campanhas_fort} = 'Needs Baby' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 108000
-           WHEN ${Campanhas_fort} = 'StanleysHair' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 200000
-           WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 260000
-           WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 222628
-           WHEN ${Campanhas_fort} = 'Wella | Soft Color' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 590000
-           WHEN ${Campanhas_fort} = 'Limpanno' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 188334
-           WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 2000000
-           WHEN ${Campanhas_fort} = 'Wella Nioxin' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 39000
-           WHEN ${Campanhas_fort} = 'Wella Care' AND DATE_TRUNC('date_month', ${date_date}) = '2024-01-01' THEN 60000
+           WHEN \${Campanhas_fort} = 'Needs Baby' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 108000
+           WHEN \${Campanhas_fort} = 'StanleysHair' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 200000
+           WHEN \${Campanhas_fort} = 'Wella - Koleston Nemesis' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 260000
+           WHEN \${Campanhas_fort} = 'Wella | Education (3º Flight)' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 222628
+           WHEN \${Campanhas_fort} = 'Wella | Soft Color' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 590000
+           WHEN \${Campanhas_fort} = 'Limpanno' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 188334
+           WHEN \${Campanhas_fort} = 'MSD Gardasil | 2024' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 2000000
+           WHEN \${Campanhas_fort} = 'Wella Nioxin' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 39000
+           WHEN \${Campanhas_fort} = 'Wella Care' AND DATE_TRUNC('month', \${date_date}) = '2024-01-01' THEN 60000
            ELSE 0
          END ;;
   }
+
 
 
   measure: max_date_date {
