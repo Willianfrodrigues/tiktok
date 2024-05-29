@@ -148,7 +148,8 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Limpanno' THEN 0.15
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN  0.17
         WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 0.15
-        WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 0.15
+        WHEN ${Campanhas_fort} = 'Wella Care' THEN 0.15
+
         ELSE 015
        END ;;
   }
@@ -168,7 +169,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-10-08'
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-11-30'
         WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-06-30'
-        WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-06-30'
+        WHEN ${Campanhas_fort} = 'Wella Care' THEN '2024-06-30'
         ELSE '2024-06-22'
       END ;;
   }
@@ -185,7 +186,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-05-15'
         WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-03-01'
         WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-05-01'
-        WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-05-01'
+        WHEN ${Campanhas_fort} = 'Wella Care' THEN '2024-05-27'
         ELSE '2024-06-22'
       END ;;
   }
