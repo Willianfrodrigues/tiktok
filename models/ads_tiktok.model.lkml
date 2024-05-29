@@ -8,6 +8,7 @@ datagroup: ads_tiktok_default_datagroup {
   max_cache_age: "2 hour"
 }
 
+
 persist_with: ads_tiktok_default_datagroup
 
 
@@ -20,4 +21,10 @@ explore: conjunto_mesclado_age_2 {}
 
 #----------------------Join-----------------------------------------#
 
-explore: conjunto_mesclado { }
+explore: conjunto_mesclado {
+    # Configurações adicionais podem ser adicionadas aqui
+  # Exemplo de join:
+  join: tik_custom_tiktok_table {
+    sql_on: ${conjunto_mesclado.campaign_name} = ${tik_custom_tiktok_table.campaign_name};;
+    relationship: many_to_one
+  }}
