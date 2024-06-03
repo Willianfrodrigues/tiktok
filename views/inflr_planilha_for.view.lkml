@@ -25,7 +25,7 @@ view: inflr_planilha_for {
     sql: ${TABLE}.Impressoes_contratadas ;;
   }
   dimension: valor {
-    type: string
+    type: number
     sql: ${TABLE}.Valor ;;
   }
   dimension: veiculacao {
