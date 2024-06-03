@@ -42,6 +42,8 @@ view: inflr_planilha_for {
     datatype: date
     sql: ${TABLE}.Veiculacao ;;
   }
+
+
   measure: count {
     type: count
   }
