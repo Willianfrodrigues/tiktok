@@ -18,6 +18,8 @@ explore: tik_custom_tiktok_table {}
 
 explore: conjunto_mesclado_age_2 {}
 
+explore: inflr_planilha_for {}
+
 
 #----------------------Join-----------------------------------------#
 
