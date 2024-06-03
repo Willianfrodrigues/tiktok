@@ -24,7 +24,7 @@ explore: conjunto_mesclado_age_2 {}
 explore: conjunto_mesclado {
     # Configurações adicionais podem ser adicionadas aqui
   # Exemplo de join:
-  join: tik_custom_tiktok_table {
-    sql_on: ${conjunto_mesclado.campaign_name} = ${tik_custom_tiktok_table.campaign_name};;
+  join:  inflr_planilha_for {
+    sql_on: ${conjunto_mesclado.campaign_name} = ${inflr_planilha_for.campanha};;
     relationship: many_to_one
   }}
