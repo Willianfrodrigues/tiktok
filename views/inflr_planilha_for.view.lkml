@@ -6,7 +6,7 @@ view: inflr_planilha_for {
     sql: ${TABLE}.Campanha ;;
   }
   dimension: cpm {
-    type: string
+    type: number
     sql: ${TABLE}.CPM ;;
   }
   dimension_group: data {
@@ -15,6 +15,13 @@ view: inflr_planilha_for {
     convert_tz: no
     datatype: date
     sql: ${TABLE}.Data ;;
+  }
+  dimension_group: data_fim {
+    type: time
+    timeframes: [raw, date, week, month, quarter, year]
+    convert_tz: no
+    datatype: date
+    sql: ${TABLE}.Data_Fim ;;
   }
   dimension: emissao {
     type: string
@@ -28,8 +35,11 @@ view: inflr_planilha_for {
     type: number
     sql: ${TABLE}.Valor ;;
   }
-  dimension: veiculacao {
-    type: string
+  dimension_group: veiculacao {
+    type: time
+    timeframes: [raw, date, week, month, quarter, year]
+    convert_tz: no
+    datatype: date
     sql: ${TABLE}.Veiculacao ;;
   }
   measure: count {
