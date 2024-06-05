@@ -82,6 +82,7 @@ view: conjunto_mesclado {
           WHEN ${campaign_name} LIKE '%LIMPANNO%' OR ${campaign_name} LIKE '%Limpanno%'  THEN 'Limpanno'
           WHEN ${campaign_name} LIKE '%NIOXIN%' THEN 'Wella Nioxin'
           WHEN ${campaign_name} LIKE '%CARE%' THEN 'Wella Care'
+          WHEN ${campaign_name} LIKE '%WELLA | META | TRÁFEGO | RMKT SOFT COLOR%' THEN 'Wella | Soft Color Rmkt'
 
           ELSE 'Outra Campanha'
       END ;;
