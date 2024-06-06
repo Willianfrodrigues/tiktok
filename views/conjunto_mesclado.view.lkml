@@ -151,7 +151,7 @@ view: conjunto_mesclado {
         WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 0.15
         WHEN ${Campanhas_fort} = 'Wella Care' THEN 0.15
 
-        ELSE 015
+        ELSE 0.15
        END ;;
   }
 
