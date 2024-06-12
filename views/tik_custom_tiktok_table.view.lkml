@@ -92,6 +92,14 @@ view: tik_custom_tiktok_table {
     sql: ${TABLE}.CLICKS ;;
   }
 
+  dimension: influenciador {
+    type: string
+    sql: CASE
+  WHEN ${ad_group_name} LIKE '%NUNVA VI 1 CIENTISTA%' THEN 'Nunca vi 1 cientista'
+
+        END ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [advertiser_name, ad_group_name, campaign_name]
