@@ -9,6 +9,10 @@ view: tik_custom_tiktok_table {
     type: string
     sql: ${TABLE}.ADVERTISER_NAME ;;
   }
+  dimension: campaign_id {
+    type: string
+    sql: ${TABLE}.CAMPAIGN_ID ;;
+  }
   dimension: campaign_name {
     type: string
     sql: ${TABLE}.CAMPAIGN_NAME ;;
@@ -19,9 +23,8 @@ view: tik_custom_tiktok_table {
   }
   dimension: conversions {
     type: number
-    sql: COALESCE(${TABLE}.CONVERSIONS, 0) ;;
+    sql: ${TABLE}.CONVERSIONS ;;
   }
-
   dimension: cost {
     type: number
     sql: ${TABLE}.COST ;;
@@ -65,6 +68,10 @@ view: tik_custom_tiktok_table {
     type: number
     sql: ${TABLE}.ENGAGEMENTS ;;
   }
+  dimension: frequency {
+    type: number
+    sql: ${TABLE}.FREQUENCY ;;
+  }
   dimension: impressions {
     type: number
     sql: ${TABLE}.IMPRESSIONS ;;
@@ -80,26 +87,7 @@ view: tik_custom_tiktok_table {
   dimension: video_play_actions {
     type: number
     sql: ${TABLE}.VIDEO_PLAY_ACTIONS ;;
-    }
-
-  measure: total_impressoes {
-    type: sum
-    sql: ${TABLE}.IMPRESSIONS ;;
   }
-
-  measure: total_cliques {
-    type: sum
-    sql: ${TABLE}.CLICKS ;;
-  }
-
-  dimension: influenciador {
-    type: string
-    sql: CASE
-  WHEN ${ad_group_name} LIKE '%NUNVA VI 1 CIENTISTA%' THEN 'Nunca vi 1 cientista'
-
-        END ;;
-  }
-
   dimension: video_views_p100 {
     type: number
     sql: ${TABLE}.VIDEO_VIEWS_P100 ;;
@@ -116,9 +104,8 @@ view: tik_custom_tiktok_table {
     type: number
     sql: ${TABLE}.VIDEO_VIEWS_P75 ;;
   }
-
   measure: count {
     type: count
-    drill_fields: [advertiser_name, ad_group_name, campaign_name]
+    drill_fields: [campaign_name, advertiser_name, ad_group_name]
   }
 }
