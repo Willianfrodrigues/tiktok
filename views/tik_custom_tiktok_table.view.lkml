@@ -92,6 +92,12 @@ view: tik_custom_tiktok_table {
     sql: ${TABLE}.CLICKS ;;
   }
 
+  dimension: Origem{
+    type: string
+    sql: 'tiktok' ;;
+  }
+
+
   dimension: influenciador {
     type: string
     sql: CASE
