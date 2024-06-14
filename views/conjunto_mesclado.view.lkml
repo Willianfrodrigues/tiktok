@@ -83,7 +83,7 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE '%COSTELATA%' OR ${campaign_name} LIKE '%Costelata%' THEN 'Costelata'
       WHEN ${campaign_name} LIKE '%STREPSILS%' THEN 'Strepsils'
 
-      ELSE 'Outra Campanha'
+
       END ;;
   }
 
