@@ -87,7 +87,21 @@ view: conjunto_mesclado {
       END ;;
   }
 
-
+  dimension: Impressoes_contratadas{
+    type: number
+    sql: CASE
+      WHEN ${Campanhas_fort} = 'Needs Baby' THEN 4000000
+      WHEN ${Campanhas_fort} = 'StanleysHair' THEN 6666667
+      WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 9629630
+      WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN 8245481
+      WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN 21851852
+      WHEN ${Campanhas_fort} = 'Limpanno' THEN 4185201
+      WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN 33333333
+      WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 1444444
+      WHEN ${Campanhas_fort} = 'Wella Care' THEN 2222222
+      ELSE 1
+      END ;;
+  }
 
   dimension: cpm_contratado{
     type: number
