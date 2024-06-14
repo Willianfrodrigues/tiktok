@@ -102,7 +102,11 @@ view: tik_custom_tiktok_table {
     type: string
     sql: CASE
   WHEN ${ad_group_name} LIKE '%NUNVA VI 1 CIENTISTA%' THEN 'Nunca vi 1 cientista'
-
+   WHEN ${ad_group_name} LIKE '%RAFAELA AMORIM%' THEN 'Rafaela Amorim'
+   WHEN ${ad_group_name} LIKE '%TATI MACHADO%' THEN 'Tati Machado'
+   WHEN ${ad_group_name} LIKE '%SABRINA DIBYNIS%' THEN 'Sabrina Dibynis'
+   WHEN ${ad_group_name} LIKE '%RAYANNE MENEZES%' THEN 'Rayanne Menezes'
+   WHEN ${ad_group_name} LIKE '%VANDERLÉIA MARQUES%' THEN 'Vanderléia Marques'
         END ;;
   }
 
