@@ -23,10 +23,4 @@ explore: inflr_planilha_for {}
 
 #----------------------Join-----------------------------------------#
 
-explore: conjunto_mesclado {
-    # Configurações adicionais podem ser adicionadas aqui
-  # Exemplo de join:
-  join:  inflr_planilha_for {
-    sql_on: ${conjunto_mesclado.campaign_name} = ${inflr_planilha_for.campanha};;
-    relationship: many_to_one
-  }}
+explore: conjunto_mesclado {}
