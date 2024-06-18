@@ -82,6 +82,7 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE '%WELLA | META | TRÁFEGO | RMKT SOFT COLOR%' THEN 'Wella | Soft Color Rmkt'
       WHEN ${campaign_name} LIKE '%COSTELATA%' OR ${campaign_name} LIKE '%Costelata%' THEN 'Costelata'
       WHEN ${campaign_name} LIKE '%STREPSILS%' THEN 'Strepsils'
+      WHEN ${campaign_name} LIKE '%OPI SIGNOS%' THEN 'Wella | Opi signos'
 
 
       END ;;
