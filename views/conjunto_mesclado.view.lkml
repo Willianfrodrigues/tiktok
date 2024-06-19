@@ -73,7 +73,7 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE '%RAIA DROGASIL%' THEN 'Needs Baby'
       WHEN ${campaign_name} LIKE 'STANLEYS %' OR ${campaign_name} LIKE '%StanleysHair%' THEN 'StanleysHair'
       WHEN ${campaign_name} LIKE '%NEMESIS%' THEN 'Wella - Koleston Nemesis'
-      WHEN ${campaign_name} LIKE '%EDUCATION%' THEN 'Wella | Education (3º Flight)'
+      WHEN ${campaign_name} LIKE '%EDUCATION%' OR ${campaign_name} LIKE '%Wella Edu%' THEN 'Wella | Education (3º Flight)'
       WHEN ${campaign_name} LIKE 'WELLA | META | VIEWS | SOFT COLOR' OR ${campaign_name} LIKE 'WELLA | META | TRÁFEGO | SOFT COLOR' OR ${campaign_name} LIKE "WELLA | TIKTOK | TRÁFEGO | SOFT COLOR" THEN 'Wella | Soft Color'
       WHEN ${campaign_name} LIKE '%GARDASIL%' THEN 'MSD Gardasil | 2024'
       WHEN ${campaign_name} LIKE '%LIMPANNO%' OR ${campaign_name} LIKE '%Limpanno%' THEN 'Limpanno'
@@ -92,14 +92,7 @@ view: conjunto_mesclado {
     type: number
     sql: CASE
       WHEN ${Campanhas_fort} = 'Needs Baby' THEN 4000000
-      WHEN ${Campanhas_fort} = 'StanleysHair' THEN 6666667
-      WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 9629630
-      WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN 8245481
-      WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN 21851852
-      WHEN ${Campanhas_fort} = 'Limpanno' THEN 4185201
-      WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN 33333333
-      WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 1444444
-      WHEN ${Campanhas_fort} = 'Wella Care' THEN 2222222
+
       ELSE 1
       END ;;
   }
@@ -108,14 +101,7 @@ view: conjunto_mesclado {
     type: number
     sql: CASE
       WHEN ${Campanhas_fort} = 'Needs Baby' THEN 27
-      WHEN ${Campanhas_fort} = 'StanleysHair' THEN 30
-      WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 27
-      WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN 27
-      WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN 27
-      WHEN ${Campanhas_fort} = 'Limpanno' THEN 45
-      WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN 60
-      WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 27
-      WHEN ${Campanhas_fort} = 'Wella Care' THEN 27
+
       ELSE 1
       END ;;
   }
@@ -124,14 +110,7 @@ view: conjunto_mesclado {
     type: number
     sql: CASE
       WHEN ${Campanhas_fort} = 'Needs Baby' THEN 108000
-      WHEN ${Campanhas_fort} = 'StanleysHair' THEN 200000
-      WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN 260000
-      WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN 222628
-      WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN 590000
-      WHEN ${Campanhas_fort} = 'Limpanno' THEN 188334
-      WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN 2000000
-      WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 39000
-      WHEN ${Campanhas_fort} = 'Wella Care' THEN 60000
+
       ELSE 0
       END ;;
   }
@@ -148,7 +127,6 @@ view: conjunto_mesclado {
       WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN 0.17
       WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN 0.15
       WHEN ${Campanhas_fort} = 'Wella Care' THEN 0.15
-
       WHEN ${Campanhas_fort} = 'Wella Care' THEN 0.15
 
       ELSE 0.15
@@ -160,14 +138,7 @@ view: conjunto_mesclado {
 
     sql: CASE
           WHEN ${Campanhas_fort} = 'Needs Baby' THEN '2024-05-25'
-          WHEN ${Campanhas_fort} = 'StanleysHair' THEN '2024-07-09'
-          WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN '2024-06-30'
-          WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN '2024-06-30'
-          WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN '2024-06-30'
-          WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-08-12'
-          WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-11-30'
-          WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-06-30'
-          WHEN ${Campanhas_fort} = 'Wella Care' THEN '2024-06-30'
+
           ELSE '2024-06-22'
         END ;;
   }
@@ -177,14 +148,7 @@ view: conjunto_mesclado {
 
     sql: CASE
           WHEN ${Campanhas_fort} = 'Needs Baby' THEN '2024-03-27'
-          WHEN ${Campanhas_fort} = 'StanleysHair' THEN '2024-04-11'
-          WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' THEN '2024-02-01'
-          WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' THEN '2024-01-02'
-          WHEN ${Campanhas_fort} = 'Wella | Soft Color' THEN '2024-02-01'
-          WHEN ${Campanhas_fort} = 'Limpanno' THEN '2024-05-15'
-          WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' THEN '2024-03-01'
-          WHEN ${Campanhas_fort} = 'Wella Nioxin' THEN '2024-05-20'
-          WHEN ${Campanhas_fort} = 'Wella Care' THEN '2024-05-27'
+
           ELSE '2024-06-22'
         END ;;
   }
@@ -195,14 +159,7 @@ view: conjunto_mesclado {
     type: number
     sql: CASE
       WHEN ${Campanhas_fort} = 'Needs Baby' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 108000
-      WHEN ${Campanhas_fort} = 'StanleysHair' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 200000
-      WHEN ${Campanhas_fort} = 'Wella - Koleston Nemesis' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 260000
-      WHEN ${Campanhas_fort} = 'Wella | Education (3º Flight)' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 222628
-      WHEN ${Campanhas_fort} = 'Wella | Soft Color' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 590000
-      WHEN ${Campanhas_fort} = 'Limpanno' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 188334
-      WHEN ${Campanhas_fort} = 'MSD Gardasil | 2024' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 2000000
-      WHEN ${Campanhas_fort} = 'Wella Nioxin' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 39000
-      WHEN ${Campanhas_fort} = 'Wella Care' AND DATE_TRUNC('month', ${date_date}) = '2024-01-01' THEN 60000
+
       ELSE 0
       END ;;
   }
