@@ -120,6 +120,7 @@ view: tik_custom_tiktok_table {
    WHEN ${ad_group_name} LIKE '%SABRINA DIBYNIS%' THEN 'Sabrina Dibynis'
    WHEN ${ad_group_name} LIKE '%RAYANNE MENEZES%' THEN 'Rayanne Menezes'
    WHEN ${ad_group_name} LIKE '%VANDERLÉIA MARQUES%' THEN 'Vanderléia Marques'
+  WHEN ${ad_group_name} LIKE '%PEDRO LOSS%' THEN 'Pedro Loss'
         END ;;
   }
 
