@@ -5,6 +5,12 @@ view: tik_custom_tiktok_table {
     type: string
     sql: ${TABLE}.AD_GROUP_NAME ;;
   }
+
+  dimension: ad_name {
+    type: string
+    sql: ${TABLE}.AD_NAME ;;
+  }
+
   dimension: advertiser_name {
     type: string
     sql: ${TABLE}.ADVERTISER_NAME ;;
@@ -15,8 +21,15 @@ view: tik_custom_tiktok_table {
   }
   dimension: clicks {
     type: number
+    sql: ${TABLE}.TOTAL_LANDING_PAGE_VIEW ;;
+  }
+
+  dimension: metrica_de_cliques_cliques{
+    type: number
     sql: ${TABLE}.CLICKS ;;
   }
+
+
   dimension: conversions {
     type: number
     sql: COALESCE(${TABLE}.CONVERSIONS, 0) ;;
@@ -89,7 +102,7 @@ view: tik_custom_tiktok_table {
 
   measure: total_cliques {
     type: sum
-    sql: ${TABLE}.CLICKS ;;
+    sql: ${TABLE}.TOTAL_LANDING_PAGE_VIEW ;;
   }
 
   dimension: Origem{
