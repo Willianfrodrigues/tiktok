@@ -124,6 +124,7 @@ view: tik_custom_tiktok_table {
    WHEN ${ad_name} LIKE '%ANGÉLICA%' THEN 'Angélica'
    WHEN ${ad_name} LIKE '%LUIZA CORREA%' THEN 'Luiza Correa'
    WHEN ${ad_name} LIKE '%GIOVANA%' THEN 'Giovana'
+  WHEN ${ad_name} LIKE '%GABRIEL%' THEN 'Gabriel'
         END ;;
   }
 
