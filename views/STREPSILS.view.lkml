@@ -1,39 +1,50 @@
 view: strepsils {
-  dimension: influenciador {
-    type: string
+  derived_table: {
     sql:
-    CASE
-      WHEN ${TABLE}.influenciador = 'Nunca Vi 1 Cientista' THEN 'Nunca Vi 1 Cientista'
-      WHEN ${TABLE}.influenciador = 'Pedro Loss' THEN 'Pedro Loss'
-    END ;;
+      SELECT 'Nunca Vi 1 Cientista' AS influenciador, 11660 AS impressoes, 36 AS cliques, '0.31%' AS crt
+      UNION ALL
+      SELECT 'Pedro Loss' AS influenciador, 87162 AS impressoes, 24 AS cliques, '0.03%' AS crt ;;
+  }
+
+  dimension: influenciador {
+    description: "Nome do influenciador"
+    type: string
+    sql: ${TABLE}.influenciador ;;
   }
 
   dimension: impressoes {
+    description: "Número de impressões"
     type: number
-    sql:
-    CASE
-      WHEN ${TABLE}.influenciador = 'Nunca Vi 1 Cientista' THEN 11660
-      WHEN ${TABLE}.influenciador = 'Pedro Loss' THEN 87162
-    END ;;
+    sql: ${TABLE}.impressoes ;;
   }
 
   dimension: cliques {
+    description: "Número de cliques"
     type: number
-    sql:
-    CASE
-      WHEN ${TABLE}.influenciador = 'Nunca Vi 1 Cientista' THEN 36
-      WHEN ${TABLE}.influenciador = 'Pedro Loss' THEN 24
-    END ;;
+    sql: ${TABLE}.cliques ;;
   }
 
   dimension: crt {
+    description: "Click-through rate (CRT)"
     type: string
-    sql:
-    CASE
-      WHEN ${TABLE}.influenciador = 'Nunca Vi 1 Cientista' THEN '0,31%'
-      WHEN ${TABLE}.influenciador = 'Pedro Loss' THEN '0,03%'
-    END ;;
+    sql: ${TABLE}.crt ;;
   }
 
+  measure: total_impressoes {
+    description: "Total de impressões"
+    type: sum
+    sql: ${impressoes} ;;
+  }
 
+  measure: total_cliques {
+    description: "Total de cliques"
+    type: sum
+    sql: ${cliques} ;;
+  }
+
+  measure: average_crt {
+    description: "Média de Click-through rate (CRT)"
+    type: average
+    sql: CAST(REPLACE(${crt}, '%', '') AS FLOAT) / 100 ;;
+  }
 }
