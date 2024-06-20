@@ -24,3 +24,4 @@ explore: inflr_planilha_for {}
 #----------------------Join-----------------------------------------#
 
 explore: conjunto_mesclado {}
+explore: strepsils {}
