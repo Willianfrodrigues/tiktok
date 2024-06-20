@@ -35,6 +35,30 @@ view: tik_custom_tiktok_table {
     sql: COALESCE(${TABLE}.CONVERSIONS, 0) ;;
   }
 
+  dimension: follows {
+    type: number
+    sql: ${TABLE}.FOLLOWS ;;
+  }
+  dimension: frequency {
+    type: number
+    sql: ${TABLE}.FREQUENCY ;;
+  }
+  dimension: likes {
+    type: number
+    sql: ${TABLE}.LIKES ;;
+  }
+  dimension: shares {
+    type: number
+    sql: ${TABLE}.SHARES ;;
+  }
+
+  dimension: comments {
+    type: number
+    sql: ${TABLE}.COMMENTS ;;
+  }
+
+
+
   dimension: cost {
     type: number
     sql: ${TABLE}.COST ;;
