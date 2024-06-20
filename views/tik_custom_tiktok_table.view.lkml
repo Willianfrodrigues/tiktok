@@ -138,7 +138,8 @@ view: tik_custom_tiktok_table {
   dimension: influenciador {
     type: string
     sql: CASE
-  WHEN ${ad_group_name} LIKE '%NUNVA VI 1 CIENTISTA%' THEN 'Nunca vi 1 cientista'
+
+  WHEN ${ad_group_name} LIKE '%NUNVA VI 1 CIENTISTA%' OR ${ad_group_name} LIKE '%NUNCA VI%' THEN 'Nunca vi 1 cientista'
    WHEN ${ad_group_name} LIKE '%RAFAELA AMORIM%' THEN 'Rafaela Amorim'
    WHEN ${ad_group_name} LIKE '%TATI MACHADO%' THEN 'Tati Machado'
    WHEN ${ad_group_name} LIKE '%SABRINA DIBYNIS%' THEN 'Sabrina Dibynis'
