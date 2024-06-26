@@ -40,6 +40,16 @@ view: conjunto_mesclado2 {
     type: number
     sql: ${TABLE}.THRUPLAY ;;
   }
+
+  dimension: influenciador {
+    type: string
+    sql: CASE
+
+        WHEN ${ad_group_name} LIKE '%LUIZA%' THEN 'Luiza'
+        WHEN ${ad_name} LIKE '%Care%' THEN 'Care'
+
+              END ;;
+  }
   measure: count {
     type: count
     drill_fields: [creative_name, campaign_name, ad_group_name, ad_name]
