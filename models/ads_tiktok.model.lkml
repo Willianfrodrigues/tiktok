@@ -25,3 +25,4 @@ explore: inflr_planilha_for {}
 
 explore: conjunto_mesclado {}
 explore: strepsils {}
+explore: conjunto_mesclado2 {}
