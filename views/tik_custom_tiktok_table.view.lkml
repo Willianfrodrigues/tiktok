@@ -170,6 +170,12 @@ view: tik_custom_tiktok_table {
     sql: ${TABLE}.VIDEO_VIEWS_P75 ;;
   }
 
+  dimension: video_whatched_6s {
+    type: number
+    sql: ${TABLE}.  VIDEO_WATCHED_6S ;;
+  }
+
+
   measure: count {
     type: count
     drill_fields: [advertiser_name, ad_group_name, campaign_name]
