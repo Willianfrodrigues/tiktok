@@ -26,3 +26,4 @@ explore: inflr_planilha_for {}
 explore: conjunto_mesclado {}
 explore: strepsils {}
 explore: conjunto_mesclado2 {}
+explore: uber_conj_mesclado_ {}
