@@ -53,6 +53,8 @@ view: conjunto_mesclado2 {
         WHEN ${ad_name} LIKE '%Tiago%' THEN 'Tiago DV'
         WHEN ${ad_name} LIKE '%Debora%' THEN 'Debora DV'
        WHEN ${ad_name} LIKE '%Danna%' THEN 'Danna DV'
+       WHEN ${ad_name} LIKE '%GIO EWBANK%' OR ${ad_name} LIKE '%gio-ewbank%' THEN 'Gio Ewbank'
+       WHEN ${ad_name} LIKE '%VIVI CAKE%' THEN 'Vivi Cake'
 
 
 
