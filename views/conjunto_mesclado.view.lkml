@@ -77,7 +77,6 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE 'WELLA | META | VIEWS | SOFT COLOR' OR ${campaign_name} LIKE 'WELLA | META | TRÁFEGO | SOFT COLOR' OR ${campaign_name} LIKE "WELLA | TIKTOK | TRÁFEGO | SOFT COLOR" THEN 'Wella | Soft Color'
       WHEN ${campaign_name} LIKE '%GARDASIL%' THEN 'MSD Gardasil | 2024'
       WHEN ${campaign_name} LIKE '%EMBAIXADORA%' OR ${campaign_name} LIKE '%br_hpv_br-hpv-00871%' THEN 'MSD Embaixadora'
-
       WHEN ${campaign_name} LIKE '%LIMPANNO%' OR ${campaign_name} LIKE '%Limpanno%' THEN 'Limpanno'
       WHEN ${campaign_name} LIKE '%NIOXIN%' THEN 'Wella Nioxin'
       WHEN ${campaign_name} LIKE '%CARE%' THEN 'Wella Care'
@@ -85,6 +84,8 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE '%COSTELATA%' OR ${campaign_name} LIKE '%Costelata%' THEN 'Costelata'
       WHEN ${campaign_name} LIKE '%STREPSILS%' THEN 'Strepsils'
       WHEN ${campaign_name} LIKE '%OPI SIGNOS%' THEN 'Wella | Opi signos'
+      WHEN ${campaign_name} LIKE '%UBER%' THEN 'Uber Moto'
+
 
 
       END ;;
