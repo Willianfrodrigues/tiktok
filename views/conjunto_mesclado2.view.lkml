@@ -60,7 +60,9 @@ view: conjunto_mesclado2 {
        WHEN ${ad_name} LIKE '%VIC MIRANDA%' THEN 'Vic Miranda'
        WHEN ${ad_name} LIKE '%LUIZA SOBRAL%' THEN 'Luiza Sobral'
        WHEN ${ad_name} LIKE '%RITA CARREIRA%' THEN 'Rita Carreira'
-
+      WHEN ${ad_name} LIKE '%DAYANNE%' THEN 'Dayanne'
+      WHEN ${ad_name} LIKE '%NAT DEUSDARÁ%' THEN 'Nat Deusdará'
+      WHEN ${ad_name} LIKE '%BIANCA DARRUIZ%' THEN 'Bianca Darruiz'
 
 
               END ;;
