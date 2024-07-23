@@ -85,6 +85,7 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE '%STREPSILS%' THEN 'Strepsils'
       WHEN ${campaign_name} LIKE '%OPI SIGNOS%' THEN 'Wella | Opi signos'
       WHEN ${campaign_name} LIKE '%UBER%' THEN 'Uber Moto'
+      WHEN ${campaign_name} LIKE '%OIL%' THEN 'Wella Professional'
 
 
 
