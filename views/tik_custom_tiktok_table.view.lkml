@@ -156,14 +156,9 @@ view: tik_custom_tiktok_table {
   dimension: Names_thuplay {
     type: string
     sql:
-    CONCAT(
-      CASE WHEN ${video_whatched_6s} > 0 THEN 'video_whatched_6s ' ELSE '' END,
-      CASE WHEN ${video_views_p75} > 0 THEN 'video_views_p75 ' ELSE '' END,
-      CASE WHEN ${video_views_p100} > 0 THEN 'video_views_p100 ' ELSE '' END,
-      CASE WHEN ${video_views_p25} > 0 THEN 'video_views_p25 ' ELSE '' END,
-      CASE WHEN ${video_views_p50} > 0 THEN 'video_views_p50 ' ELSE '' END
-    ) ;;
+    'video_whatched_6s\nvideo_views_p75\nvideo_views_p100\nvideo_views_p25\nvideo_views_p50' ;;
   }
+
 
 
 
