@@ -156,7 +156,7 @@ view: tik_custom_tiktok_table {
   dimension: Names_thuplay {
     type: string
     sql:
-    (SELECT 'video_whatched_6s' AS field_name
+    (SELECT 'video_whatched_6s'
      UNION ALL
      SELECT 'video_views_p75'
      UNION ALL
