@@ -156,7 +156,15 @@ view: tik_custom_tiktok_table {
   dimension: Names_thuplay {
     type: string
     sql:
-    'video_whatched_6s\nvideo_views_p75\nvideo_views_p100\nvideo_views_p25\nvideo_views_p50' ;;
+    (SELECT 'video_whatched_6s' AS name
+     UNION ALL
+     SELECT 'video_views_p75'
+     UNION ALL
+     SELECT 'video_views_p100'
+     UNION ALL
+     SELECT 'video_views_p25'
+     UNION ALL
+     SELECT 'video_views_p50') ;;
   }
 
 
