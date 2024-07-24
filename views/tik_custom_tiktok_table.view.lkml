@@ -153,13 +153,9 @@ view: tik_custom_tiktok_table {
         END ;;
   }
 
-  dimension: combined_video_metrics {
+  dimension: combined_video_metric_names {
     type: string
-    sql: CONCAT('video_views_p100: ', ${TABLE}.VIDEO_VIEWS_P100, ', ',
-              'video_views_p25: ', ${TABLE}.VIDEO_VIEWS_P25, ', ',
-              'video_views_p50: ', ${TABLE}.VIDEO_VIEWS_P50, ', ',
-              'video_views_p75: ', ${TABLE}.VIDEO_VIEWS_P75, ', ',
-              'video_watched_6s: ', ${TABLE}.VIDEO_WATCHED_6S) ;;
+    sql: 'video_views_p100, video_views_p25, video_views_p50, video_views_p75, video_watched_6s' ;;
   }
 
 
