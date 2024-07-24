@@ -153,9 +153,17 @@ view: tik_custom_tiktok_table {
         END ;;
   }
 
-  dimension: video_views_p100_names {
-    type: string
-    sql: 'video_views_p100' ;;
+  dimension: dimension_value {
+    type: number
+    sql:
+      CASE
+        WHEN ${TABLE}.VIDEO_VIEWS_P100 IS NOT NULL THEN ${TABLE}.VIDEO_VIEWS_P100
+        WHEN ${TABLE}.VIDEO_VIEWS_P25 IS NOT NULL THEN ${TABLE}.VIDEO_VIEWS_P25
+        WHEN ${TABLE}.VIDEO_VIEWS_P50 IS NOT NULL THEN ${TABLE}.VIDEO_VIEWS_P50
+        WHEN ${TABLE}.VIDEO_VIEWS_P75 IS NOT NULL THEN ${TABLE}.VIDEO_VIEWS_P75
+        WHEN ${TABLE}.VIDEO_WATCHED_6S IS NOT NULL THEN ${TABLE}.VIDEO_WATCHED_6S
+        ELSE NULL
+      END ;;
   }
 
   dimension: video_views_p75_names {
