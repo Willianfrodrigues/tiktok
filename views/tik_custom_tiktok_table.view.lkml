@@ -153,9 +153,14 @@ view: tik_custom_tiktok_table {
         END ;;
   }
 
-  dimension: combined_video_metric_names {
+  dimension: video_views_p100_names {
     type: string
-    sql: 'video_views_p100, video_views_p25, video_views_p50, video_views_p75, video_watched_6s' ;;
+    sql: 'video_views_p100' ;;
+  }
+
+  dimension: video_views_p75_names {
+    type: string
+    sql: 'video_views_p75' ;;
   }
 
 
