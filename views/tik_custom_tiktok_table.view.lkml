@@ -153,18 +153,13 @@ view: tik_custom_tiktok_table {
         END ;;
   }
 
-  dimension: Names_thuplay {
+  dimension: combined_video_metrics {
     type: string
-    sql:
-    (SELECT 'video_whatched_6s' AS name
-     UNION ALL
-     SELECT 'video_views_p75'
-     UNION ALL
-     SELECT 'video_views_p100'
-     UNION ALL
-     SELECT 'video_views_p25'
-     UNION ALL
-     SELECT 'video_views_p50') ;;
+    sql: CONCAT('video_views_p100: ', ${TABLE}.VIDEO_VIEWS_P100, ', ',
+              'video_views_p25: ', ${TABLE}.VIDEO_VIEWS_P25, ', ',
+              'video_views_p50: ', ${TABLE}.VIDEO_VIEWS_P50, ', ',
+              'video_views_p75: ', ${TABLE}.VIDEO_VIEWS_P75, ', ',
+              'video_watched_6s: ', ${TABLE}.VIDEO_WATCHED_6S) ;;
   }
 
 
