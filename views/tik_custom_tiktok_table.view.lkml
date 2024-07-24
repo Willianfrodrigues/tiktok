@@ -156,15 +156,13 @@ view: tik_custom_tiktok_table {
   dimension: Names_thuplay {
     type: string
     sql:
-    (SELECT 'video_whatched_6s' AS name
-     UNION ALL
-     SELECT 'video_views_p75'
-     UNION ALL
-     SELECT 'video_views_p100'
-     UNION ALL
-     SELECT 'video_views_p25'
-     UNION ALL
-     SELECT 'video_views_p50') ;;
+    CONCAT(
+      'video_whatched_6s', CHAR(10),
+      'video_views_p75', CHAR(10),
+      'video_views_p100', CHAR(10),
+      'video_views_p25', CHAR(10),
+      'video_views_p50'
+    ) ;;
   }
 
 
