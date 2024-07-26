@@ -1,9 +1,9 @@
 view: tik_reach_campaign {
   sql_table_name: `looker-integrations-402615.tiktok_ads.TIK_REACH_CAMPAIGN` ;;
 
-  dimension: campaign_name {
+  dimension: advertiser {
     type: string
-    sql: ${TABLE}.CAMPAIGN_NAME ;;
+    sql: ${TABLE}.ADVERTISER_NAME ;;
   }
   dimension: impressions {
     type: number
@@ -19,6 +19,6 @@ view: tik_reach_campaign {
   }
   measure: count {
     type: count
-    drill_fields: [campaign_name]
+    drill_fields: [advertiser]
   }
 }
