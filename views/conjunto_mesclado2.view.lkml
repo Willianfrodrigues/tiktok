@@ -48,7 +48,7 @@ view: conjunto_mesclado2 {
         WHEN ${ad_group_name} LIKE '%LUIZA%' THEN 'Luiza'
         WHEN ${ad_name} LIKE '%Care%' THEN 'Care'
          WHEN ${ad_name} LIKE '%DEBORA%' THEN 'Debora'
-        WHEN ${ad_name} LIKE '%TIAGO GONÇALVES%' THEN 'Thiago Gonçalves'
+        WHEN ${ad_name} LIKE '%TIAGO GONÇALVES%' THEN 'Tiago'
         WHEN ${ad_name} LIKE '%MARCIO%' THEN 'Marcio'
         WHEN ${ad_name} LIKE '%Tiago%' THEN 'Tiago'
         WHEN ${ad_name} LIKE '%Debora%' THEN 'Debora'
