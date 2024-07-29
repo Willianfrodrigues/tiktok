@@ -67,9 +67,10 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%TABATA%'  THEN 'Tabata'
       WHEN ${ad_name} LIKE '%URSULA%'  THEN 'Ursula'
       WHEN ${ad_name} LIKE '%MARCIO%' THEN 'Marcio'
-      WHEN ${ad_name} LIKE  '%Tabata%' THEN 'Tabata DV'
-      WHEN ${ad_name} LIKE  '%Ursula%' THEN 'Ursula DV'
-      WHEN ${ad_name} LIKE  '%Marcio%' THEN 'Marcio DV'
+      WHEN ${ad_name} LIKE  '%Tabata%' THEN 'Tabata'
+      WHEN ${ad_name} LIKE  '%Ursula%' THEN 'Ursula'
+      WHEN ${ad_name} LIKE  '%Marcio%' THEN 'Marcio'
+
 
 
 
