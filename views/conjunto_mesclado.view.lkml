@@ -76,7 +76,7 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE '%EDUCATION%' OR ${campaign_name} LIKE '%Wella Edu%' THEN 'Wella | Education (3º Flight)'
       WHEN ${campaign_name} LIKE 'WELLA | META | VIEWS | SOFT COLOR' OR ${campaign_name} LIKE 'WELLA | META | TRÁFEGO | SOFT COLOR' OR ${campaign_name} LIKE 'WELLA | META | ALCANCE | SOFT COLOR' OR ${campaign_name} LIKE "WELLA | TIKTOK | TRÁFEGO | SOFT COLOR" THEN 'Wella | Soft Color'
       WHEN ${campaign_name} LIKE '%GARDASIL%' OR ${campaign_name} LIKE '%00929%' THEN 'MSD Gardasil | 2024'
-      WHEN ${campaign_name} LIKE '%EMBAIXADORA%' OR ${campaign_name} OR ${campaign_name} LIKE '%00871%' THEN 'MSD Embaixadora'
+      WHEN ${campaign_name} LIKE '%EMBAIXADORA%' OR ${campaign_name} LIKE '%00871%' THEN 'MSD Embaixadora'
       WHEN ${campaign_name} LIKE '%LIMPANNO%' OR ${campaign_name} LIKE '%Limpanno%' THEN 'Limpanno'
       WHEN ${campaign_name} LIKE '%NIOXIN%' THEN 'Wella Nioxin'
       WHEN ${campaign_name} LIKE '%CARE%' THEN 'Wella Care'
