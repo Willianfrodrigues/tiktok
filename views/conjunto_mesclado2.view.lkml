@@ -70,11 +70,10 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE  '%Tabata%' THEN 'Tabata'
       WHEN ${ad_name} LIKE  '%Ursula%' THEN 'Ursula'
       WHEN ${ad_name} LIKE  '%Marcio%' THEN 'Marcio'
-      WHEN ${ad_name} LIKE  '%LUANA%' THEN 'Luana'
-      WHEN ${ad_name} LIKE  '%APTO 303%' THEN 'APTO 303'
-      WHEN ${ad_name} LIKE  '%KARINE%' THEN 'Karine'
-      WHEN ${ad_name} LIKE  '%VANESSA%' THEN 'Vanessa'
-
+      WHEN ${ad_name} LIKE  '%LUANA%' OR ${ad_name} LIKE '%Luana%' THEN 'Luana'
+      WHEN ${ad_name} LIKE  '%APTO 303%' OR ${ad_name} LIKE '%Apto 303%' THEN 'APTO 303'
+      WHEN ${ad_name} LIKE  '%KARINE%' OR ${ad_name} LIKE '%Karine%'THEN 'Karine'
+      WHEN ${ad_name} LIKE  '%VANESSA%' OR ${ad_name} LIKE '%Vanessa%' THEN 'Vanessa'
 
 
 
