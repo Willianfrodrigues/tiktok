@@ -86,7 +86,7 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE '%OPI SIGNOS%' THEN 'Wella | Opi signos'
       WHEN ${campaign_name} LIKE '%UBER%' THEN 'Uber Moto'
       WHEN ${campaign_name} LIKE '%OIL%' THEN 'Wella Ultimate Lux OIL'
-      WHEN ${campaign_name} LIKE '%SAMS CLUB%' THEN 'Sams Club'
+      WHEN ${campaign_name} LIKE '%SAMS CLUB%' OR ${campaign_name} 'Sams Club - Crossmedia' LIKE THEN 'Sams Club'
       WHEN ${campaign_name} LIKE '%cdb_inflr_cpm%' THEN 'Banco Pan'
 
 
