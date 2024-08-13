@@ -72,6 +72,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE  '%Marcio%' THEN 'Marcio'
       WHEN ${ad_name} LIKE  '%LUANA%' THEN 'Luana'
       WHEN ${ad_name} LIKE  '%APTO 303%' THEN 'APTO 303'
+      WHEN ${ad_name} LIKE  '%KARINE%' THEN 'Karine'
+      WHEN ${ad_name} LIKE  '%VANESSA%' THEN 'Vanessa'
+
 
 
 
