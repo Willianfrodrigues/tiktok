@@ -48,7 +48,7 @@ view: uber_conj_mesclado_ {
           WHEN ${ad_name} LIKE '%BÁRBARA COURA %'OR ${ad_name} LIKE '%Barbara Coura%' THEN'Bárbara Coura'
           WHEN ${ad_name} LIKE '%LUÍSA SOARES%' OR ${ad_name} LIKE '%Lu Soares%' THEN 'Luísa Soares'
           WHEN ${ad_name} LIKE '%RAND MARINHO%' OR ${ad_name} LIKE '%Rand%' THEN 'Rand Marinho'
-          WHEN ${ad_name} LIKE '%RENATA MABA%' OR ${ad_name} LIKE '%Renata Maba%' THEN 'Renata Maba'
+          WHEN ${ad_name} LIKE '%RENATA MABA%' OR ${ad_name} LIKE '%Renata Ma%' THEN 'Renata Maba'
 
 
 
