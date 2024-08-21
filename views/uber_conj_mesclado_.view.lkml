@@ -41,6 +41,11 @@ view: uber_conj_mesclado_ {
     sql: ${TABLE}.THRUPLAY ;;
   }
 
+  dimension: landing_page_views {
+    type: number
+    sql: ${TABLE}.LANDING_PAGE_VIEWS ;;
+  }
+
   dimension: influenciador {
     type: string
     sql: CASE
