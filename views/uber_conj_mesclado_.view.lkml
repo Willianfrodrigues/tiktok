@@ -40,6 +40,19 @@ view: uber_conj_mesclado_ {
     type: number
     sql: ${TABLE}.THRUPLAY ;;
   }
+
+  dimension: influenciador {
+    type: string
+    sql: CASE
+
+          WHEN ${ad_name} LIKE '%TIAGO GONÇALVES%' THEN 'Tiago Gonçalves'
+          WHEN ${ad_name} LIKE '%LUÍSA SOARES%' OR ${ad_name} LIKE '%Lu Soares %' THEN 'Luísa Soares'
+
+
+
+      END ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [creative_name, campaign_name, ad_group_name, ad_name]
