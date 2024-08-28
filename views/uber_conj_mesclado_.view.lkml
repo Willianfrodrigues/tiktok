@@ -61,7 +61,9 @@ view: uber_conj_mesclado_ {
           WHEN ${ad_name} LIKE '%ANA FERREIRA%' OR ${ad_name} LIKE '%Ana Ferreira%' THEN 'Ana Ferreira'
           WHEN ${ad_name} LIKE '%LINDA LIS%' OR ${ad_name} LIKE '%Linda Lis%' THEN 'Linda Lis'
           WHEN ${ad_name} LIKE '%JULIA PIOLTI%' OR ${ad_name} LIKE '%Julia Piolti%' THEN 'Julia Piolti'
-          WHEN ${ad_name} LIKE '%  %' OR ${ad_name} LIKE '% %' THEN '  '
+          WHEN ${ad_name} LIKE '%BARBARA COURA%' OR ${ad_name} LIKE '%Barbara Coura%' THEN 'Barbara Coura'
+          WHEN ${ad_name} LIKE '%BRUNO FERREIRA%' OR ${ad_name} LIKE '%Bruno Ferreira%' THEN 'Bruno Ferreira'
+
 
 
 
