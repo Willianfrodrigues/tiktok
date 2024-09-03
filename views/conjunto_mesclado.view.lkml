@@ -92,8 +92,6 @@ view: conjunto_mesclado {
       WHEN ${campaign_name} LIKE '%BRITÂNIA%' AND ${campaign_name} NOT LIKE '%AIR FRYER%' THEN 'Britânia Dooh'
       WHEN ${campaign_name} LIKE '%NEEDS PELE%' THEN 'Needs Pele'
 
-
-
       END ;;
   }
 
