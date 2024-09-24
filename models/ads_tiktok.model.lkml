@@ -12,6 +12,13 @@ datagroup: ads_tiktok_default_datagroup {
 persist_with: ads_tiktok_default_datagroup
 
 
+
+map_layer: brazilian_state {
+file: "/state.json"
+ property_key: "name"
+
+}
+
 explore: conjunto_mesclado_age {}
 
 explore: tik_custom_tiktok_table {}
