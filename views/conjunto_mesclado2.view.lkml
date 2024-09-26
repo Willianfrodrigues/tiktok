@@ -81,7 +81,6 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE  '%MARCELA%' OR ${ad_name} LIKE '%Marcela%' THEN 'Marcela'
       WHEN ${ad_name} LIKE  '%ALINE CAMPOS%' OR ${ad_name} LIKE '%Aline Campos%' THEN 'Aline Campos'
       WHEN ${ad_name} LIKE  '%LIDI LISBOA %' OR ${ad_name} LIKE '%Lidi Lisboa%' THEN 'Lidi Lisboa'
-      WHEN ${ad_name} LIKE  '%ALINE CAMPOS%' OR ${ad_name} LIKE '%Aline Campos%' THEN 'Aline Campos'
 
 
               END ;;
