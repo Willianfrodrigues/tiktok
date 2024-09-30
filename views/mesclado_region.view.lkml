@@ -7,7 +7,7 @@ view: mesclado_region {
   }
   dimension: clicks {
     type: number
-    sql: ${TABLE}.CLICKS ;;
+    sql: ${TABLE}.TOTAL_CLICKS ;;
   }
   dimension_group: date {
     type: time
@@ -18,7 +18,7 @@ view: mesclado_region {
   }
   dimension: impressions {
     type: number
-    sql: ${TABLE}.IMPRESSIONS ;;
+    sql: ${TABLE}.TOTAL_IMPRESSIONS ;;
   }
 
   dimension: region {
