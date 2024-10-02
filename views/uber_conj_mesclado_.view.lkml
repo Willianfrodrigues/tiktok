@@ -71,6 +71,7 @@ view: uber_conj_mesclado_ {
           WHEN ${ad_name} LIKE '%FERNANDO LOURENÇO%' THEN 'Fernando Lourenço'
           WHEN ${ad_name} LIKE '%MELHORES AMIGOS%' THEN 'Melhores Amigos'
           WHEN ${ad_name} LIKE '%DEUSO GREGO%' THEN 'Deuso Grego'
+          WHEN ${ad_name} LIKE '%JULIO ROCHA%' THEN 'Julio Rocha'
           WHEN ${ad_name} LIKE '%MARCOS LUCINDO%' OR ${ad_name} LIKE '%Marcos Lucindo%' THEN 'Marcos Lucindo'
          WHEN ${ad_name} LIKE '%JULIANA MEN%' OR ${ad_name} LIKE '%Juliana Menezes%' THEN 'Juliana Menezes'
          WHEN ${ad_name} LIKE '%CARAS%' OR ${ad_name} LIKE '%Caras%' THEN 'Caras'
