@@ -21,6 +21,11 @@ view: mesclado_region {
     sql: ${TABLE}.TOTAL_IMPRESSIONS ;;
   }
 
+  dimension: PLATFORM {
+    type: string
+    sql: ${TABLE}.PLATFORM ;;
+  }
+
   dimension: region {
     type: string
     map_layer_name: brazilian_state
