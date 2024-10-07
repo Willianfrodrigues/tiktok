@@ -171,6 +171,17 @@ view: conjunto_mesclado {
       END ;;
   }
 
+
+  dimension: campanhaF {
+    type: string
+    sql: CASE
+          WHEN ${campaign_name} LIKE '%cons_ccdig_cdb_inflr_cpm%' THEN 'INFLR | META | TRÁFEGO | CLIENTE'
+          WHEN ${campaign_name} LIKE '%aware_ccdig_cdb_inflr_cpm%' THEN 'INFLR | CROSSMEDIA | CONSIDERAÇÃO | CLIENTE'
+
+
+      END ;;
+  }
+
   measure: max_date_date {
     type: date
     sql: MAX(${date_date}) ;;
