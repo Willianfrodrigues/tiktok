@@ -81,6 +81,10 @@ view: uber_conj_mesclado_ {
          WHEN ${ad_name} LIKE '%JHONATA TEIXEIRA%' OR ${ad_name} LIKE '%Jhonata Teixeira%' OR ${ad_name} LIKE '%Jhonata%' THEN 'Jhonata Teixeira'
          WHEN ${ad_name} LIKE '%SHOW DA XUXA%' OR ${ad_name} LIKE '%Show da xuxa%' THEN 'Show da Xuxa'
          WHEN ${ad_name} LIKE '%BRAZILIAN VERSION%' OR ${ad_name} LIKE '%Brazilian Version%' THEN 'Brazilian Version'
+         WHEN ${ad_name} LIKE '%EDY RIOS%' OR ${ad_name} LIKE '%Edy Rios%' THEN 'Edy Rios'
+         WHEN ${ad_name} LIKE '%ANA SUPSUP%' OR ${ad_name} LIKE '%Ana Supsup%' THEN 'Ana Supsup'
+         WHEN ${ad_name} LIKE '%FRANCESCA%' OR ${ad_name} LIKE '%Francesca%' THEN 'Francesca'
+         WHEN ${ad_name} LIKE '%PATI BIANCO%' OR ${ad_name} LIKE '%Pati Bianco%' THEN 'Pati Bianco'
 
 
 
