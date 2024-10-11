@@ -79,6 +79,8 @@ view: uber_conj_mesclado_ {
          WHEN ${ad_name} LIKE '%FLAVIA DELL%' OR ${ad_name} LIKE '%Flavia Dell%' OR ${ad_name} LIKE '%Flavia_Dell%' THEN 'Flavia Dell'
          WHEN ${ad_name} LIKE '%LEPRINCE%' OR ${ad_name} LIKE '%Leprince%' THEN 'Leprince'
          WHEN ${ad_name} LIKE '%JHONATA TEIXEIRA%' OR ${ad_name} LIKE '%Jhonata Teixeira%' OR ${ad_name} LIKE '%Jhonata%' THEN 'Jhonata Teixeira'
+         WHEN ${ad_name} LIKE '%SHOW DA XUXA%' OR ${ad_name} LIKE '%Show da xuxa%' THEN 'Show da xuxa'
+         WHEN ${ad_name} LIKE '%BRAZILIAN VERSION%' OR ${ad_name} LIKE '%Brazilian Version%' THEN 'Brazilian Version'
 
 
 
