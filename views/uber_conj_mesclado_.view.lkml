@@ -75,16 +75,17 @@ view: uber_conj_mesclado_ {
           WHEN ${ad_name} LIKE '%MARCOS LUCINDO%' OR ${ad_name} LIKE '%Marcos Lucindo%' THEN 'Marcos Lucindo'
          WHEN ${ad_name} LIKE '%JULIANA MEN%' OR ${ad_name} LIKE '%Juliana Menezes%' THEN 'Juliana Menezes'
          WHEN ${ad_name} LIKE '%CARAS%' OR ${ad_name} LIKE '%Caras%' THEN 'Caras'
-         WHEN ${ad_name} LIKE '%MARIA ALICE%' OR ${ad_name} LIKE '%Maria Alice%' THEN 'Maria Alice'
+         WHEN ${ad_name} LIKE '%MARIA ALICE%' OR ${ad_name} LIKE '%Maria Alice%' OR ${ad_name} LIKE '%Maria_Alice%' THEN 'Maria Alice'
          WHEN ${ad_name} LIKE '%FLAVIA DELL%' OR ${ad_name} LIKE '%Flavia Dell%' OR ${ad_name} LIKE '%Flavia_Dell%' THEN 'Flavia Dell'
          WHEN ${ad_name} LIKE '%LEPRINCE%' OR ${ad_name} LIKE '%Leprince%' THEN 'Leprince'
          WHEN ${ad_name} LIKE '%JHONATA TEIXEIRA%' OR ${ad_name} LIKE '%Jhonata Teixeira%' OR ${ad_name} LIKE '%Jhonata%' THEN 'Jhonata Teixeira'
          WHEN ${ad_name} LIKE '%SHOW DA XUXA%' OR ${ad_name} LIKE '%Show da xuxa%' THEN 'Show da Xuxa'
          WHEN ${ad_name} LIKE '%BRAZILIAN VERSION%' OR ${ad_name} LIKE '%Brazilian Version%' THEN 'Brazilian Version'
-         WHEN ${ad_name} LIKE '%EDY RIOS%' OR ${ad_name} LIKE '%Edy Rios%' THEN 'Edy Rios'
+         WHEN ${ad_name} LIKE '%EDY RIOS%' OR ${ad_name} LIKE '%Edy Rios%' OR ${ad_name} LIKE '%Edy_Rios%' THEN 'Edy Rios'
          WHEN ${ad_name} LIKE '%ANA SUPSUP%' OR ${ad_name} LIKE '%Ana Supsup%' THEN 'Ana Supsup'
          WHEN ${ad_name} LIKE '%FRANCESCA%' OR ${ad_name} LIKE '%Francesca%' THEN 'Francesca'
          WHEN ${ad_name} LIKE '%PATI BIANCO%' OR ${ad_name} LIKE '%Pati Bianco%' THEN 'Pati Bianco'
+         WHEN ${ad_name} LIKE '%THAI MIRANDA%' OR ${ad_name} LIKE '%Thai Miranda%' THEN 'Thai Miranda'
 
 
 
