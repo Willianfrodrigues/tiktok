@@ -39,6 +39,19 @@ view: conjunto_click_link {
   dimension: total_thruplay {
     type: number
     sql: ${TABLE}.total_thruplay ;;
+
+  }
+
+  dimension: influenciador {
+    type: string
+    sql: CASE
+
+              WHEN ${ad_group_name} LIKE '%ANA LUIZA%' THEN 'Ana Luiza'
+              WHEN ${ad_group_name} LIKE '%CELSO ZUCATELLI %' THEN 'Celso Zucatelli'
+            WHEN ${ad_group_name} LIKE  '%LINDA LIS%' OR ${ad_name} LIKE '%Linda lis%' THEN 'Linda lis'
+
+
+      END ;;
   }
   measure: count {
     type: count
