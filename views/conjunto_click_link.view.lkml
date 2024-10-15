@@ -1,40 +1,36 @@
 view: conjunto_click_link {
   sql_table_name: `looker-integrations-402615.tiktok_ads.Conjunto_click_link` ;;
 
-  dimension: campaign_id {
+  dimension: ad_group_name {
     type: string
-    sql: ${TABLE}.CAMPAIGN_ID ;;
+    sql: ${TABLE}.AD_GROUP_NAME ;;
+  }
+  dimension: ad_name {
+    type: string
+    sql: ${TABLE}.AD_NAME ;;
   }
   dimension: campaign_name {
     type: string
     sql: ${TABLE}.CAMPAIGN_NAME ;;
+  }
+  dimension: creative_name {
+    type: string
+    sql: ${TABLE}.CREATIVE_NAME ;;
   }
   dimension_group: date {
     type: time
     timeframes: [raw, date, week, month, quarter, year]
     convert_tz: no
     datatype: date
-    sql: ${TABLE}.DATE ;;
+    sql: ${TABLE}.date ;;
   }
   dimension: origem {
     type: string
     sql: ${TABLE}.origem ;;
   }
-  dimension: total_alcance {
-    type: number
-    sql: ${TABLE}.total_alcance ;;
-  }
-  dimension: total_cadastros {
-    type: number
-    sql: ${TABLE}.total_cadastros ;;
-  }
   dimension: total_clicks {
     type: number
     sql: ${TABLE}.total_clicks ;;
-  }
-  dimension: total_cost {
-    type: number
-    sql: ${TABLE}.total_cost ;;
   }
   dimension: total_impressions {
     type: number
@@ -46,6 +42,6 @@ view: conjunto_click_link {
   }
   measure: count {
     type: count
-    drill_fields: [campaign_name]
+    drill_fields: [creative_name, campaign_name, ad_group_name, ad_name]
   }
 }
