@@ -37,3 +37,4 @@ explore: uber_conj_mesclado_ {}
 explore: tik_reach_criativo_tiktok {}
 explore:  tik_reach_campaign {}
 explore:  mesclado_region {}
+explore: conjunto_click_link {}
