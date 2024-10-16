@@ -48,7 +48,8 @@ view: conjunto_click_link {
 
               WHEN ${ad_group_name} LIKE '%ANA LUIZA%' THEN 'Ana Luiza'
               WHEN ${ad_group_name} LIKE '%CELSO ZUCATELLI %' THEN 'Celso Zucatelli'
-            WHEN ${ad_group_name} LIKE  '%LINDA LIS%' OR ${ad_name} LIKE '%Linda lis%' THEN 'Linda lis'
+              WHEN ${ad_group_name} LIKE  '%LINDA LIS%' OR ${ad_name} LIKE '%Linda lis%' THEN 'Linda lis'
+              WHEN ${ad_group_name} LIKE '%JADE%' THEN 'Jade'
 
 
       END ;;
