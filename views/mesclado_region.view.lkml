@@ -5,10 +5,6 @@ view: mesclado_region {
     type: string
     sql: ${TABLE}.CAMPAIGN ;;
   }
-  dimension: clicks {
-    type: number
-    sql: ${TABLE}.TOTAL_CLICKS ;;
-  }
   dimension_group: date {
     type: time
     timeframes: [raw, date, week, month, quarter, year]
@@ -16,22 +12,22 @@ view: mesclado_region {
     datatype: date
     sql: ${TABLE}.DATE ;;
   }
-  dimension: impressions {
-    type: number
-    sql: ${TABLE}.TOTAL_IMPRESSIONS ;;
-  }
-
-  dimension: PLATFORM {
+  dimension: platform {
     type: string
     sql: ${TABLE}.PLATFORM ;;
   }
-
   dimension: region {
     type: string
-    map_layer_name: brazilian_state
-    sql: REGEXP_REPLACE(${TABLE}.REGION, ' \\(state\\)$', '') ;;
+    sql: ${TABLE}.REGION ;;
   }
-
+  dimension: total_clicks {
+    type: number
+    sql: ${TABLE}.TOTAL_CLICKS ;;
+  }
+  dimension: total_impressions {
+    type: number
+    sql: ${TABLE}.TOTAL_IMPRESSIONS ;;
+  }
   measure: count {
     type: count
   }
