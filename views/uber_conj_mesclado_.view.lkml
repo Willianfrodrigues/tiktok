@@ -67,7 +67,7 @@ view: uber_conj_mesclado_ {
           WHEN ${ad_name} LIKE '%LU GUIMARÃES%' OR ${ad_name} LIKE '%Guimaraes%' THEN 'Lu Guimarães'
           WHEN ${ad_name} LIKE '%LUISA SOARES%' OR ${ad_name} LIKE '%Luisa Soare%' THEN 'Luisa Soares'
           WHEN ${ad_name} LIKE '%ANA SUPSUP%' OR ${ad_name} LIKE '%Ana Supsup%' THEN 'Ana Supsup'
-          WHEN ${ad_name} LIKE '%ANANDA VASCONCELOS%' OR ${ad_name} LIKE '%Ananda%' THEN 'Amanda Vasconcelos'
+          WHEN ${ad_name} LIKE '%ANANDA VASCONCELOS%' OR ${ad_name} LIKE '%Ananda%' THEN 'Ananda Vasconcelos'
           WHEN ${ad_name} LIKE '%FERNANDO LOURENÇO%' THEN 'Fernando Lourenço'
           WHEN ${ad_name} LIKE '%MELHORES AMIGOS%' THEN 'Melhores Amigos'
           WHEN ${ad_name} LIKE '%DEUSO GREGO%' THEN 'Deuso Grego'
@@ -90,6 +90,8 @@ view: uber_conj_mesclado_ {
          WHEN ${ad_name} LIKE '%JADE COMERIA%' OR ${ad_name} LIKE '%Jade Comeria%'  THEN 'Jade Comeria'
          WHEN ${ad_name} LIKE '%Bruno Manoel%' OR ${ad_name} LIKE '%Bruno Manoel%' OR ${ad_name} LIKE '%Bruno_Manoel%' THEN 'Bruno Manoel'
          WHEN ${ad_name} LIKE '%Renata Maba%' OR ${ad_name} LIKE '%Renata_Maba%'  THEN 'Renata Maba'
+         WHEN ${ad_name} LIKE '%CHEFE ALVARO%' OR ${ad_name} LIKE '%Chef Alvaro%'  THEN 'Chefe Alvaro'
+
 
 
 
