@@ -48,11 +48,11 @@ view: conjunto_click_link {
 
               WHEN ${ad_group_name} LIKE '%ANA LUIZA%' OR ${ad_name} LIKE '%Ana Luiza%'  THEN 'Ana Luiza'
               WHEN ${ad_group_name} LIKE '%CELSO ZUCATELLI %' OR ${ad_name} LIKE '%Celso Zucatelli%' THEN 'Celso Zucatelli'
-              WHEN ${ad_group_name} LIKE  '%LINDA LIS%' OR ${ad_name} LIKE '%Linda lis%' THEN 'Linda lis'
+              WHEN ${ad_group_name} LIKE  '%LINDA%' OR ${ad_name} LIKE '%Linda lis%' THEN 'Linda lis'
               WHEN ${ad_group_name} LIKE '%JADE%' THEN 'Jade'
-              WHEN ${ad_group_name} LIKE '%JHESSICA MACEDO%' OR ${ad_name} LIKE '%Jeh Macedo%'THEN 'Jhessica Macedo'
+              WHEN ${ad_group_name} LIKE '%JHESSICA%' OR ${ad_name} LIKE '%Jeh Macedo%'THEN 'Jhessica Macedo'
               WHEN ${ad_group_name} LIKE '%KARINA%' OR ${ad_name} LIKE '%Karina%' THEN 'Luiz e Karina'
-              WHEN ${ad_group_name} LIKE '%THAUANE ALVES%' OR ${ad_name} LIKE '%Thauane Alvez%' THEN 'Thauane Alvez'
+              WHEN ${ad_group_name} LIKE '%THAUANE ALVES%' OR ${ad_name} LIKE '%Thauane Alves%' OR ${ad_group_name} LIKE '%THAUANE%' THEN 'Thauane Alvez'
 
 
 
