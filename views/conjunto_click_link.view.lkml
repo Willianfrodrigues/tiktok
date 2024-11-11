@@ -54,8 +54,6 @@ view: conjunto_click_link {
               WHEN ${ad_group_name} LIKE '%KARINA%' OR ${ad_name} LIKE '%Karina%' THEN 'Luiz e Karina'
               WHEN ${ad_group_name} LIKE '%THAUANE ALVES%' OR ${ad_name} LIKE '%Thauane Alves%' OR ${ad_group_name} LIKE '%THAUANE%' THEN 'Thauane Alves'
 
-
-
       END ;;
   }
   measure: count {
