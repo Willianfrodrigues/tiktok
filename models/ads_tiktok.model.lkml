@@ -38,3 +38,4 @@ explore: tik_reach_criativo_tiktok {}
 explore:  tik_reach_campaign {}
 explore:  mesclado_region {}
 explore: conjunto_click_link {}
+explore: achec {}
