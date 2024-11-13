@@ -37,7 +37,7 @@ view: enhertu_f {
   }
 
   dimension: complete_views_video {
-    type: string
+    type: number
     sql: ${TABLE}.Complete_Views_Video ;;
   }
 
@@ -67,7 +67,7 @@ view: enhertu_f {
   }
 
   dimension: first_quartile_views_video {
-    type: string
+    type: number
     sql: ${TABLE}.First_Quartile_Views_Video ;;
   }
 
@@ -103,7 +103,7 @@ view: enhertu_f {
   }
 
   dimension: total_conversions {
-    type: string
+    type: number
     sql: ${TABLE}.Total_Conversions ;;
   }
   measure: count {
