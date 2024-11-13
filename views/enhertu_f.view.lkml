@@ -12,7 +12,7 @@ view: enhertu_f {
     # This dimension will be called "Active View Viewable Impressions" in Explore.
 
   dimension: active_view_viewable_impressions {
-    type: string
+    type: number
     sql: ${TABLE}.Active_View_Viewable_Impressions ;;
   }
 
