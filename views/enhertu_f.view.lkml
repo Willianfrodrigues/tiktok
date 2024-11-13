@@ -32,7 +32,7 @@ view: enhertu_f {
   }
 
   dimension: clicks {
-    type: string
+    type: number
     sql: ${TABLE}.Clicks ;;
   }
 
@@ -42,7 +42,7 @@ view: enhertu_f {
   }
 
   dimension: cpc {
-    type: string
+    type: number
     sql: ${TABLE}.CPC ;;
   }
 
@@ -72,9 +72,20 @@ view: enhertu_f {
   }
 
   dimension: impressions {
-    type: string
+    type: number
     sql: ${TABLE}.Impressions ;;
   }
+
+  # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
+  # measures for this dimension, but you can also add measures of many different aggregates.
+  # Click on the type parameter to see all the options in the Quick Help panel on the right.
+
+  measure: total_impressions {
+    type: sum
+    sql: ${impressions} ;;  }
+  measure: average_impressions {
+    type: average
+    sql: ${impressions} ;;  }
 
   dimension: insertion_order {
     type: string
@@ -87,7 +98,7 @@ view: enhertu_f {
   }
 
   dimension: revenue {
-    type: string
+    type: number
     sql: ${TABLE}.Revenue ;;
   }
 
