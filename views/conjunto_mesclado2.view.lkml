@@ -82,10 +82,14 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE  '%ALINE CAMPOS%' OR ${ad_name} LIKE '%Aline Campos%' THEN 'Aline Campos'
       WHEN ${ad_name} LIKE  '%LIDI LISBOA %' OR ${ad_name} LIKE '%Lidi Lisboa%' THEN 'Lidi Lisboa'
       WHEN ${ad_name} LIKE  '%MIRELLE MOSCHELLA%' OR ${ad_name} LIKE '%Mirelle Moschella%' THEN 'Mirelle Moschella'
- WHEN ${ad_name} LIKE '%ANA LUIZA%' THEN 'Ana Luiza'
-  WHEN ${ad_name} LIKE '%CELSO ZUCATELLI %' THEN 'Celso Zucatelli'
+      WHEN ${ad_name} LIKE '%ANA LUIZA%' THEN 'Ana Luiza'
+      WHEN ${ad_name} LIKE '%CELSO ZUCATELLI %' THEN 'Celso Zucatelli'
       WHEN ${ad_name} LIKE  '%LINDA LIS%' OR ${ad_name} LIKE '%Linda lis%' THEN 'Linda lis'
-    WHEN ${ad_name} LIKE '%JADE%' THEN 'Jade'
+      WHEN ${ad_name} LIKE '%JADE%' THEN 'Jade'
+      WHEN ${ad_name} LIKE '%NICOLE%' THEN 'Nicole'
+      WHEN ${ad_name} LIKE '%MARIANA%' THEN 'Mariana'
+
+
 
 
 
