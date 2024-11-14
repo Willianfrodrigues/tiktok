@@ -102,6 +102,11 @@ view: enhertu_f {
     sql: ${TABLE}.Revenue ;;
   }
 
+  dimension: Unique_Users {
+    type: number
+    sql: ${TABLE}.Unique_Users ;;
+  }
+
   dimension: total_conversions {
     type: number
     sql: ${TABLE}.Total_Conversions ;;
