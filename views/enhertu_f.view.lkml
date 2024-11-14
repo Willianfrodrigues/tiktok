@@ -107,6 +107,12 @@ view: enhertu_f {
     sql: ${TABLE}.Unique_Users ;;
   }
 
+  dimension: Total_Reachy {
+    type: number
+    sql: ${TABLE}.Total_Reachy ;;
+  }
+
+
   dimension: total_conversions {
     type: number
     sql: ${TABLE}.Total_Conversions ;;
