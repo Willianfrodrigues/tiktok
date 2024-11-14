@@ -88,6 +88,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%JADE%' THEN 'Jade'
       WHEN ${ad_name} LIKE '%NICOLE%' THEN 'Nicole'
       WHEN ${ad_name} LIKE '%MARIANA%' THEN 'Mariana'
+      WHEN ${ad_name} LIKE '%DRA THAIS%' THEN 'Dra Thais'
 
 
 
