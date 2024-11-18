@@ -54,7 +54,7 @@ view: conjunto_mesclado2 {
         WHEN ${ad_name} LIKE '%Debora%' THEN 'Debora'
        WHEN ${ad_name} LIKE '%Danna%' THEN 'Danna'
        WHEN ${ad_name} LIKE '%GIO EWBANK%' OR ${ad_name} LIKE '%gio-ewbank%' THEN 'Gio Ewbank'
-       WHEN ${ad_name} LIKE '%VIVI CAKE%' THEN 'Vivi Cake'
+       WHEN ${ad_name} LIKE '%VIVI CAKE%' OR ${ad_name} LIKE '%Vivi Cake%' THEN 'Vivi Cake'
        WHEN ${ad_name} LIKE '%GIOVANNA%' THEN 'Giovanna'
        WHEN ${ad_name} LIKE '%GUI TAKAHASHI%' THEN 'Gui Takahashi'
        WHEN ${ad_name} LIKE '%VIC MIRANDA%' THEN 'Vic Miranda'
