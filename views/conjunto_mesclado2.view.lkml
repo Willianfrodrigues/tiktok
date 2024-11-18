@@ -89,11 +89,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%NICOLE%' THEN 'Nicole'
       WHEN ${ad_name} LIKE '%MARIANA%' THEN 'Mariana'
       WHEN ${ad_name} LIKE '%DRA THAIS%' THEN 'Dra Thais'
-      WHEN ${ad_name} LIKE '%Cleo Pires%' OR ${ad_name} LIKE '%CLÉO PIRES%'  THEN 'Cléo Pires'
-
-
-
-
+      WHEN ${ad_name} LIKE '%Cleo Pires%' OR ${ad_name} LIKE '%CLÉO PIRES%' OR ${ad_group_name} LIKE '%CLÉO PIRES%' THEN 'Cléo Pires'
 
 
 
