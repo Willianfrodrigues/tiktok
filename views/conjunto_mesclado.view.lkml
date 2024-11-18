@@ -114,14 +114,6 @@ view: conjunto_mesclado {
       END ;;
   }
 
-  dimension: PI{
-    type: number
-    sql: CASE
-      WHEN ${Campanhas_fort} = 'Needs Baby' THEN 108000
-
-      ELSE 0
-      END ;;
-  }
 
   dimension: percent_to_apply {
     type: number
