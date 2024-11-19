@@ -53,6 +53,8 @@ view: conjunto_click_link {
               WHEN ${ad_group_name} LIKE '%JHESSICA%' OR ${ad_name} LIKE '%Jeh Macedo%' OR ${ad_name} LIKE '%Jhessica%'THEN 'Jhessica Macedo'
               WHEN ${ad_group_name} LIKE '%KARINA%' OR ${ad_name} LIKE '%Karina%' THEN 'Luiz e Karina'
               WHEN ${ad_group_name} LIKE '%THAUANE ALVES%' OR ${ad_name} LIKE '%Thauane Alves%' OR ${ad_group_name} LIKE '%THAUANE%' THEN 'Thauane Alves'
+              WHEN ${ad_group_name} LIKE '%BÁRBARA%' THEN 'Bárbara'
+              WHEN ${ad_group_name} LIKE '%LIZIANE%' THEN 'Liziane'
 
       END ;;
   }
