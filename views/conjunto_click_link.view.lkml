@@ -55,6 +55,7 @@ view: conjunto_click_link {
               WHEN ${ad_group_name} LIKE '%THAUANE ALVES%' OR ${ad_name} LIKE '%Thauane Alves%' OR ${ad_group_name} LIKE '%THAUANE%' THEN 'Thauane Alves'
               WHEN ${ad_group_name} LIKE '%BÁRBARA%' THEN 'Bárbara'
               WHEN ${ad_group_name} LIKE '%LIZIANE%' THEN 'Liziane'
+              WHEN ${ad_group_name} LIKE '%ÍCARO BOMFIM%' THEN 'Ícaro Bomfim'
 
       END ;;
   }
