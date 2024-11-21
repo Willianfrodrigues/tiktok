@@ -40,4 +40,3 @@ explore:  mesclado_region {}
 explore: conjunto_click_link {}
 explore: achec {}
 explore: enhertu_f {}
-explore: appgas2 {}
