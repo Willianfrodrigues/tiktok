@@ -96,7 +96,7 @@ view: uber_conj_mesclado_ {
          WHEN ${ad_name} LIKE '%Jade Comeria%' THEN 'Jade Comeria'
          WHEN ${ad_name} LIKE '%Jobson Amancio%' OR ${ad_name} LIKE '%OBSON AMANCIO%' THEN 'Jobson Amancio'
          WHEN ${ad_name} LIKE '%JHONATA TEIXEIRA%' THEN 'Jhonata Teixeira'
-         WHEN ${ad_name} LIKE '%Angela Ramo%' OR ${ad_name} LIKE '%ANGELA RAMOS%' OR ${ad_name} LIKE '% Angela_Ramos%' THEN 'Angela Ramos'
+         WHEN ${ad_name} LIKE '%Angela Ramo%' OR ${ad_name} LIKE '%ANGELA RAMOS%' OR ${ad_name} LIKE '%Angela_Ramos%' THEN 'Angela Ramos'
          WHEN ${ad_name} LIKE '%LEO FECK%' OR ${ad_name} LIKE '%Leo Feck%' THEN 'Leo Feck'
          WHEN ${ad_name} LIKE '%CARLA%' OR ${ad_name} LIKE '%Carla%' THEN 'Carla'
 
