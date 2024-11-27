@@ -55,10 +55,11 @@ view: conjunto_click_link {
               WHEN ${ad_group_name} LIKE '%THAUANE ALVES%' OR ${ad_name} LIKE '%Thauane Alves%' OR ${ad_group_name} LIKE '%THAUANE%' THEN 'Thauane Alves'
               WHEN ${ad_group_name} LIKE '%BÁRBARA%' THEN 'Bárbara'
               WHEN ${ad_group_name} LIKE '%LIZIANE%' THEN 'Liziane'
-              WHEN ${ad_group_name} LIKE '%ÍCARO BOMFIM%' THEN 'Ícaro Bomfim'
+              WHEN ${ad_group_name} LIKE '%ÍCARO BOMFIM%' OR ${ad_name} LIKE '%Icaro Bonfim%' THEN 'Ícaro Bomfim'
               WHEN ${ad_group_name} LIKE '%CLAUDIA LEITTE%' THEN 'Claudia Leitte'
               WHEN ${ad_group_name} LIKE '%ISADORA%' THEN 'Isadora'
               WHEN ${ad_group_name} LIKE '%GUIA DE SP%' THEN 'Guia de SP'
+              WHEN ${ad_group_name} LIKE '%BRUNO CORREA%' THEN 'Bruno Correa'
 
 
 
