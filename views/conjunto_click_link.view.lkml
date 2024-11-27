@@ -60,6 +60,7 @@ view: conjunto_click_link {
               WHEN ${ad_group_name} LIKE '%ISADORA%' THEN 'Isadora'
               WHEN ${ad_group_name} LIKE '%GUIA DE SP%' THEN 'Guia de SP'
               WHEN ${ad_group_name} LIKE '%BRUNO CORREA%' THEN 'Bruno Correa'
+              WHEN ${ad_group_name} LIKE '%larissa%' THEN 'larissa'
 
 
 
