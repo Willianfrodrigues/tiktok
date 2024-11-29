@@ -93,6 +93,13 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%Cleo Pires%' OR ${ad_name} LIKE '%CLÉO PIRES%' OR ${ad_group_name} LIKE '%CLÉO PIRES%' THEN 'Cléo Pires'
       WHEN ${ad_name} LIKE  '%BRU TAI LOPES%' OR ${ad_name} LIKE '%Bru Tai Lopes%' THEN 'Bru Tai Lopes'
       WHEN ${ad_name} LIKE  '%MA TRANCHES%' OR ${ad_name} LIKE '%Ma Tranches%' THEN 'Ma Tranches'
+      WHEN ${ad_name} LIKE  '%DR DIEGO DI MARCO%' OR ${ad_name} LIKE '%DR DIEGO DI MARCO%' THEN 'Dr. Diego Di Marco'
+      WHEN ${ad_name} LIKE  '%DRA LILIAN%' OR ${ad_name} LIKE '%DRA LILIAN%' THEN 'Dra. Lilian'
+
+
+
+
+
 
 
 
