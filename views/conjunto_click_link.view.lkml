@@ -58,8 +58,8 @@ view: conjunto_click_link {
               WHEN ${ad_group_name} LIKE '%ÍCARO BOMFIM%' OR ${ad_name} LIKE '%Icaro Bonfim%' THEN 'Ícaro Bomfim'
               WHEN ${ad_group_name} LIKE '%CLAUDIA LEITTE%' THEN 'Claudia Leitte'
               WHEN ${ad_group_name} LIKE '%ISADORA%' THEN 'Isadora'
-              WHEN ${ad_group_name} LIKE '%GUIA DE SP%' THEN 'Guia de SP'
-              WHEN ${ad_group_name} LIKE '%BRUNO CORREA%' THEN 'Bruno Correa'
+              WHEN ${ad_group_name} LIKE '%GUIA DE SP%'  OR ${ad_name} LIKE '%Guia_de_SP%' OR ${ad_name} LIKE '%Guia de SP%' THEN 'Guia de SP'
+              WHEN ${ad_group_name} LIKE '%BRUNO CORREA%' or ${ad_name} LIKE '%Bruno Correa%' THEN 'Bruno Correa'
               WHEN ${ad_name} LIKE '%larissa%' THEN 'Larissa'
 
 
