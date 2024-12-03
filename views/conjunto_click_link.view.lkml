@@ -66,6 +66,18 @@ view: conjunto_click_link {
 
       END ;;
   }
+
+  dimension: total_seguidores {
+    type: number
+    sql: CASE
+            WHEN ${influenciador} = 'Bruno Correa' THEN 962000
+            WHEN ${influenciador} = 'Ícaro Bomfim' THEN 850000
+            WHEN ${influenciador} = 'Guia de SP' THEN 500000
+            -- Adicione outras condições conforme necessário
+            ELSE NULL
+         END ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [creative_name, campaign_name, ad_group_name, ad_name]
