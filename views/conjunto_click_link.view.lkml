@@ -70,9 +70,9 @@ view: conjunto_click_link {
   dimension: total_seguidores {
     type: number
     sql: CASE
-            WHEN ${influenciador} = 'Bruno Correa' THEN 962000
-            WHEN ${influenciador} = 'Ícaro Bomfim' THEN 850000
-            WHEN ${influenciador} = 'Guia de SP' THEN 500000
+            WHEN ${influenciador} = 'Bruno Correa' THEN 2144833
+            WHEN ${influenciador} = 'Ícaro Bomfim' THEN 578676
+            WHEN ${influenciador} = 'Guia de SP' THEN 150499
             -- Adicione outras condições conforme necessário
             ELSE NULL
          END ;;
