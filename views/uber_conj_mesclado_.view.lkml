@@ -100,7 +100,8 @@ view: uber_conj_mesclado_ {
          WHEN ${ad_name} LIKE '%LEO FECK%' OR ${ad_name} LIKE '%Leo Feck%' THEN 'Leo Feck'
          WHEN ${ad_name} LIKE '%CARLA%' OR ${ad_name} LIKE '%Carla%' THEN 'Carla'
          WHEN ${ad_name} LIKE '%REEH AUGUSTO%' OR ${ad_name} LIKE '%Reeh_Augusto%' OR ${ad_name} LIKE '%Reeh Augusto%' THEN 'Carla'
-
+      WHEN ${ad_name} LIKE '%JANAELE LIMA%' OR ${ad_name} LIKE '%Michele_Crispim%' OR ${ad_name} LIKE '%Michele Crispim%' THEN 'Consuelo Blocker'
+      WHEN ${ad_name} LIKE '%MICHELE CRISPIM%' OR ${ad_name} LIKE '%Janaele Lima%' OR ${ad_name} LIKE '%Janaele_Lima%' THEN 'Consuelo Blocker'
 
 
 
