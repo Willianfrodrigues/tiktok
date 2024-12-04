@@ -114,6 +114,12 @@ view: conjunto_mesclado2 {
         END ;;
   }
 
+  measure: impressoes {
+    type: sum
+    sql: ${TABLE}.total_impressions ;;
+  }
+
+
   measure: count {
     type: count
     drill_fields: [creative_name, campaign_name, ad_group_name, ad_name]
