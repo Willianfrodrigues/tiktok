@@ -102,12 +102,6 @@ view: conjunto_mesclado2 {
 
 
 
-
-
-
-
-
-
               END ;;
   }
 
