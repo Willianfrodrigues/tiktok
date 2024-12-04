@@ -105,18 +105,21 @@ view: conjunto_mesclado2 {
               END ;;
   }
 
+  measure: total_impressions {
+    type: sum
+    sql: ${TABLE}.IMPRESSIONS ;;
+  }
+
+
   dimension: impressions_adjusted {
     type: number
     sql: CASE
-          WHEN ${influenciador} = 'Marcela' AND ${date_date} = '2024-11-30'
-          THEN ${impressions} + 300505
+          WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil'
+               AND ${influenciador} = 'Marcela'
+               AND ${date_date} = '2024-11-30'
+          THEN ${impressions} + 300249
           ELSE ${impressions}
         END ;;
-  }
-
-  measure: impressoes {
-    type: sum
-    sql: ${TABLE}.total_impressions ;;
   }
 
 
