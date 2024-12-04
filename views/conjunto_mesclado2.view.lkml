@@ -113,7 +113,7 @@ view: conjunto_mesclado2 {
           WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil'
                AND ${influenciador} = 'Marcela'
                AND ${date_date} = '2024-11-30'
-          THEN ${impressions} + 300.249
+          THEN ${impressions} + 300249
           -- Caso não precise de ajuste
           ELSE ${impressions}
         END ;;
