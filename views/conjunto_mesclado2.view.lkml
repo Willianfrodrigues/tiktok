@@ -110,18 +110,6 @@ view: conjunto_mesclado2 {
     sql: ${TABLE}.IMPRESSIONS ;;
   }
 
-  # Definindo a medida ajustada
-  measure: impressions_adjusted {
-    type: number
-    sql: CASE
-           WHEN ${platform} = 'DV360'
-                AND ${influenciador} = 'Marcela'
-                AND ${date_date} = '2024-11-30'
-           THEN ${total_impressions} + 300249
-           ELSE ${total_impressions}
-         END ;;
-  }
-
 
 
   measure: count {
