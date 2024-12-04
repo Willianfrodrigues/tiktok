@@ -176,6 +176,17 @@ view: conjunto_mesclado {
       END ;;
   }
 
+
+  dimension: impressions_adjusted {
+    type: number
+    sql: CASE
+          WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil' AND ${date_date} = '2024-11-30'
+          THEN ${total_impressions} + 300505
+          ELSE ${total_impressions}
+        END ;;
+  }
+
+
   measure: max_date_date {
     type: date
     sql: MAX(${date_date}) ;;
