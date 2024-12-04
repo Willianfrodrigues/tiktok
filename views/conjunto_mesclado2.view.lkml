@@ -111,10 +111,11 @@ view: conjunto_mesclado2 {
           WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil'
                AND ${influenciador} = 'Marcela'
                AND ${date_date} = '2024-11-30'
-          THEN CAST(${impressions} AS NUMBER) + 300249
-          ELSE CAST(${impressions} AS NUMBER)
+          THEN ${impressions} + 300249
+          ELSE ${impressions}
         END ;;
   }
+
   measure: count {
     type: count
     drill_fields: [creative_name, campaign_name, ad_group_name, ad_name]
