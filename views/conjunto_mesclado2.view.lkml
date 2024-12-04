@@ -95,6 +95,11 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE  '%MA TRANCHES%' OR ${ad_name} LIKE '%Ma Tranches%' THEN 'Ma Tranches'
       WHEN ${ad_name} LIKE  '%DR DIEGO DI MARCO%' OR ${ad_name} LIKE '%DR DIEGO DI%' THEN 'Dr. Diego Di Marco'
       WHEN ${ad_name} LIKE  '%DRA LILIAN%' OR ${ad_name} LIKE '%DRA LILIAN%' THEN 'Dra. Lilian'
+      WHEN ${ad_name} LIKE '%ANNA EGREJA%' THEN 'Anna Egreja'
+      WHEN ${ad_name} LIKE '%MARIA EUGENIA%' THEN 'Maria Eugenia'
+      WHEN ${ad_name} LIKE '%THASSIA NAVES%' THEN 'Thassia Naves'
+      WHEN ${ad_name} LIKE '%CONSUELO BLOCKER%' THEN 'Consuelo Blocker'
+
 
 
 
