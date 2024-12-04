@@ -106,18 +106,6 @@ view: conjunto_mesclado2 {
               END ;;
   }
 
-  dimension: impressions_adjusted {
-    type: number
-    sql: CASE
-          -- Ajuste específico para Marcela
-          WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil'
-               AND ${influenciador} = 'Marcela'
-               AND ${date_date} = '2024-11-30'
-          THEN ${impressions} + 300249
-          -- Caso não precise de ajuste
-          ELSE ${impressions}
-        END ;;
-  }
 
   measure: count {
     type: count
