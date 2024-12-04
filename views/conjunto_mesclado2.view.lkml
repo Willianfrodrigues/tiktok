@@ -98,7 +98,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%ANNA EGREJA%' THEN 'Anna Egreja'
       WHEN ${ad_name} LIKE '%MARIA EUGENIA%' THEN 'Maria Eugenia'
       WHEN ${ad_name} LIKE '%THASSIA NAVES%' THEN 'Thassia Naves'
-      WHEN ${ad_name} LIKE '%CONSUELO BLOCKER%' THEN 'Consuelo Blocker'
+      WHEN ${ad_name} LIKE '%CONSUELO BLOCKER%'  THEN 'Consuelo Blocker'
+      WHEN ${ad_name} LIKE '%JANAELE LIMA%' OR ${ad_name} LIKE '%Michele_Crispim%' OR ${ad_name} LIKE '%Michele Crispim%' THEN 'Consuelo Blocker'
+      WHEN ${ad_name} LIKE '%MICHELE CRISPIM%' OR ${ad_name} LIKE '%Janaele Lima%' OR ${ad_name} LIKE '%Janaele_Lima%' THEN 'Consuelo Blocker'
 
 
 
