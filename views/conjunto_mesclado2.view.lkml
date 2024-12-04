@@ -108,10 +108,8 @@ view: conjunto_mesclado2 {
   dimension: impressions_adjusted {
     type: number
     sql: CASE
-          WHEN ${platform} = 'Google DV360'
-               AND ${influenciador} = 'Marcela'
-               AND ${date_date} = '2024-11-30'
-          THEN ${impressions} + 300249
+          WHEN ${influenciador} = 'Marcela' AND ${date_date} = '2024-11-30'
+          THEN ${impressions} + 300505
           ELSE ${impressions}
         END ;;
   }
