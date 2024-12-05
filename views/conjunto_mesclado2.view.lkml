@@ -129,10 +129,14 @@ view: conjunto_mesclado2 {
   dimension: impressions_adjusted {
     type: number
     sql: CASE
-          WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil' AND ${date_date} = '2024-11-30' AND ${influenciador} = 'Marcela' AND ${ad_group_name} 'MSD | WLS | Saude' AND ${ad_name} 'MSD | Gardasil | Consideracao | Marcela McGowan | 320x100 | Crossmedia'
-          THEN ${impressions} + 300505
-          ELSE ${impressions}
-        END ;;
+        WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil'
+         AND ${date_date} = '2024-11-30'
+         AND ${influenciador} = 'Marcela'
+         AND ${ad_group_name} = 'MSD | WLS | Saude'
+         AND ${ad_name} = 'MSD | Gardasil | Consideracao | Marcela McGowan | 320x100 | Crossmedia'
+        THEN ${impressions} + 300505
+        ELSE ${impressions}
+      END ;;
   }
 
   measure: count {
