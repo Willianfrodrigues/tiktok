@@ -117,9 +117,11 @@ view: conjunto_mesclado2 {
   measure: impressoes_ajustadas_marcela {
     type: sum
     sql: CASE
-         WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil' AND
+         WHEN ${campaign_name} = '%Crossmedia | MSD%' AND
               ${date_date} = '2024-11-30' AND
-              ${influenciador} = 'Marcela'
+              AND
+              ${platform} = 'Google DV360' AND
+              ${influenciador} = '%Marcela%'
          THEN ${impressions} + 300.000
          ELSE ${impressions}
        END ;;
