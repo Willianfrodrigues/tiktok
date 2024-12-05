@@ -101,7 +101,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%CONSUELO BLOCKER%'  THEN 'Consuelo Blocker'
       WHEN ${ad_name} LIKE '%JANAELE LIMA%' OR ${ad_name} LIKE '%Michele_Crispim%' OR ${ad_name} LIKE '%Michele Crispim%' THEN 'Consuelo Blocker'
       WHEN ${ad_name} LIKE '%MICHELE CRISPIM%' OR ${ad_name} LIKE '%Janaele Lima%' OR ${ad_name} LIKE '%Janaele_Lima%' THEN 'Consuelo Blocker'
-
+      WHEN ${ad_name} LIKE '%RAFAEL FERRARI%' THEN 'Rafael Ferrari'
+      WHEN ${ad_name} LIKE '%HENRY HATAKEYAMA%' THEN 'Henry Hatakeyama'
+      WHEN ${ad_name} LIKE '%THAIS FIGUEIREDO%' THEN 'Thais Figueiredo'
 
 
               END ;;
