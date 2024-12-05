@@ -121,7 +121,7 @@ view: conjunto_mesclado2 {
               ${date_date} = '2024-11-30' AND
               ${platform} = 'Google DV360' AND
               ${influenciador} = '%Marcela%'
-         THEN ${impressions} + 300.000
+         THEN ${impressions} + 300000
          ELSE ${impressions}
        END ;;
   }
