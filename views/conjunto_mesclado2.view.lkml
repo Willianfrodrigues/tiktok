@@ -126,6 +126,14 @@ view: conjunto_mesclado2 {
        END ;;
   }
 
+  dimension: impressions_adjusted {
+    type: number
+    sql: CASE
+          WHEN ${campaign_name} = 'Crossmedia | MSD | Consideracao | Gardasil' AND ${date_date} = '2024-11-30' AND ${influenciador} = 'Marcela'
+          THEN ${impressions} + 300505
+          ELSE ${impressions}
+        END ;;
+  }
 
   measure: count {
     type: count
