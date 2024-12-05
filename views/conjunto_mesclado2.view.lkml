@@ -134,7 +134,7 @@ view: conjunto_mesclado2 {
          AND ${influenciador} = 'Marcela'
          AND ${ad_group_name} = 'MSD | WLS | Saude'
          AND ${ad_name} = 'MSD | Gardasil | Consideracao | Marcela McGowan | 320x100 | Crossmedia'
-        THEN ${impressions} + 300505
+        THEN ${impressions} + 300.249
         ELSE ${impressions}
       END ;;
   }
