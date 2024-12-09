@@ -104,6 +104,8 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%RAFAEL FERRARI%' THEN 'Rafael Ferrari'
       WHEN ${ad_name} LIKE '%HENRY HATAKEYAMA%' THEN 'Henry Hatakeyama'
       WHEN ${ad_name} LIKE '%THAIS FIGUEIREDO%' THEN 'Thais Figueiredo'
+      WHEN ${ad_name} LIKE '%GI SAYURI%' THEN 'Gi Sayuri'
+      WHEN ${ad_name} LIKE '%VERI YAMAZOE%' THEN 'Veri Yamazoe'
 
 
               END ;;
