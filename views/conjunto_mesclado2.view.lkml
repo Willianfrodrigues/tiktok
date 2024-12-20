@@ -17,6 +17,12 @@ view: conjunto_mesclado2 {
     type: number
     sql: ${TABLE}.CLICKS ;;
   }
+
+  dimension: clicks_no_link {
+    type: number
+    sql: ${TABLE}.CLICKS_LINK ;;
+  }
+
   dimension: creative_name {
     type: string
     sql: ${TABLE}.CREATIVE_NAME ;;
