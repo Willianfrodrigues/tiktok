@@ -122,6 +122,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%IGOR%' OR ${ad_name} LIKE '%Igor%' THEN 'Igor Saringer'
       WHEN ${ad_name} LIKE '%JESS%' OR ${ad_name} LIKE '%Jess%' THEN 'Jessr'
       WHEN ${ad_name} LIKE '%THAIS%' OR ${ad_name} LIKE '%Thais%' THEN 'Thais'
+      WHEN ${ad_name} LIKE '%MATHEUS%' OR ${ad_name} LIKE '%Matheus%' THEN 'Matheus'
 
 
               END ;;
