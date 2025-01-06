@@ -195,8 +195,6 @@ view: conjunto_mesclado {
   dimension: impressao_ajustada {
     type: number
     sql: CASE
-        WHEN ${TABLE}.CAMPAIGN_NAME LIKE '%PHILCO | META | VIEWS | AMIGO SECRETO%'
-             AND CAST(${TABLE}.DATE AS DATE) = '2024-12-11' THEN GREATEST(${TABLE}.IMPRESSIONS * 0.75
         WHEN ${TABLE}.CAMPAIGN_NAME LIKE '%PHILCO | META | VIEWS | AMIGO SECRETO%' THEN ${TABLE}.IMPRESSIONS * 0.75
         ELSE ${TABLE}.IMPRESSIONS
       END ;;
