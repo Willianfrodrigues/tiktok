@@ -192,16 +192,15 @@ view: conjunto_mesclado {
     sql: MAX(${date_date}) ;;
   }
 
-dimension: impressao_ajustada {
-
-  type: number
-  sql: CASE
-        WHEN ${TABLE}.CAMPAIGN_NAME LIKE '%PHILCO | META | VIEWS | AMIGO SECRETO%'
-             AND DATE(${TABLE}.DATE) = '2024-12-11' THEN ${TABLE}.IMPRESSIONS - 17000000
-        WHEN ${TABLE}.CAMPAIGN_NAME LIKE '%PHILCO | META | VIEWS | AMIGO SECRETO%' THEN ${TABLE}.IMPRESSIONS - 1700000
+  dimension: impressao_ajustada {
+    type: number
+    sql: CASE
+        WHEN LOWER(${TABLE}.CAMPAIGN_NAME) LIKE LOWER('%PHILCO | META | VIEWS | AMIGO SECRETO%')
+             AND CAST(${TABLE}.DATE AS DATE) = '2024-12-11' THEN ${TABLE}.IMPRESSIONS - 17000000
+        WHEN LOWER(${TABLE}.CAMPAIGN_NAME) LIKE LOWER('%PHILCO | META | VIEWS | AMIGO SECRETO%') THEN ${TABLE}.IMPRESSIONS - 1700000
         ELSE ${TABLE}.IMPRESSIONS
       END ;;
-}
+  }
 
 
 
