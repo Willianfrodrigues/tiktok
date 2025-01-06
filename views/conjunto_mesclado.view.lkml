@@ -192,6 +192,14 @@ view: conjunto_mesclado {
     sql: MAX(${date_date}) ;;
   }
 
+  dimension: impressao_ajustada {
+    type: number
+    sql: CASE
+          WHEN ${TABLE}.INSERTION_ORDER LIKE '%PHILCO | META | VIEWS | AMIGO SECRETO%' THEN ${TABLE}.IMPRESSIONS - 1700000
+          ELSE ${TABLE}.IMPRESSIONS
+       END ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [campaign_name]
