@@ -50,7 +50,7 @@ view: conjunto_mesclado2 {
   dimension: impressao_ajustada {
     type: number
     sql: CASE
-        WHEN ${TABLE}.CAMPAIGN_NAME LIKE '%PHILCO | META | VIEWS | AMIGO SECRETO%'
+        WHEN ${TABLE}.CAMPAIGN_NAME LIKE '%PHILCO%'
              AND CAST(${TABLE}.DATE AS DATE) = '2024-12-11' THEN ${TABLE}.IMPRESSIONS * 0.5
         ELSE ${TABLE}.IMPRESSIONS
       END ;;
