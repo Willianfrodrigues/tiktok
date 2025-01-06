@@ -195,7 +195,7 @@ view: conjunto_mesclado {
   dimension: impressao_ajustada {
     type: number
     sql: CASE
-          WHEN ${TABLE}.INSERTION_ORDER LIKE '%PHILCO | META | VIEWS | AMIGO SECRETO%' THEN ${TABLE}.IMPRESSIONS - 1700000
+          WHEN ${TABLE}.CAMPAIGN_NAME LIKE '%PHILCO | META | VIEWS | AMIGO SECRETO%' THEN ${TABLE}.IMPRESSIONS - 1700000
           ELSE ${TABLE}.IMPRESSIONS
        END ;;
   }
