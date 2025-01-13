@@ -63,6 +63,8 @@ view: conjunto_click_link {
               WHEN ${ad_group_name} LIKE '%BRUNO CORREA%' or ${ad_name} LIKE '%Bruno Correa%' THEN 'Bruno Correa'
               WHEN ${ad_name} LIKE '%larissa%'or ${ad_group_name} LIKE '%LARISSA%' THEN 'Larissa'
               WHEN ${ad_name} LIKE '%rebeca%'or ${ad_group_name} LIKE '%rebeca%' THEN 'Rebeca'
+              WHEN ${ad_name} LIKE '%BIANCA OLIVEIRA%' OR ${ad_name} LIKE '%Bianca Oliveira%' THEN 'Bianca Oliveira'
+              WHEN ${ad_name} LIKE '%MARCELLA KOSINSKI%' OR ${ad_name} LIKE '%Marcella Kosinski%' THEN 'Marcella Kosinski'
 
 
 
@@ -75,6 +77,9 @@ view: conjunto_click_link {
             WHEN ${influenciador} = 'Bruno Correa' THEN 2144833
             WHEN ${influenciador} = 'Ícaro Bomfim' THEN 578676
             WHEN ${influenciador} = 'Guia de SP' THEN 150499
+            WHEN ${influenciador} = 'Marcella Kosinski' THEN 112501
+            WHEN ${influenciador} = 'Bianca Oliveira' THEN 216109
+
             -- Adicione outras condições conforme necessário
             ELSE NULL
          END ;;
