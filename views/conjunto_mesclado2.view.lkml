@@ -134,6 +134,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%JULIA ALVES%' OR ${ad_name} LIKE '%Julia Alves%' THEN 'Julia Alves'
       WHEN ${ad_name} LIKE '%MAYARA RODRIGUES%' OR ${ad_name} LIKE '%Mayara Rodrigues%' THEN 'Mayara Rodrigues'
       WHEN ${ad_name} LIKE '%STHEFANY VITORIA%' OR ${ad_name} LIKE '%Sthefany Vitoria%' THEN 'Sthefany Vitoria'
+      WHEN ${ad_name} LIKE '%BIANCA OLIVEIRA%' OR ${ad_name} LIKE '%Bianca Oliveira%' THEN 'Bianca Oliveira'
+      WHEN ${ad_name} LIKE '%MARCELLA KOSINSKI%' OR ${ad_name} LIKE '%Marcella Kosinski%' THEN 'Marcella Kosinski'
+
               END ;;
   }
 
