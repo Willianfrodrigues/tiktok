@@ -139,6 +139,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%TRIZ HERMANO%' OR ${ad_name} LIKE '%TRIZ%' THEN 'Trizz Hermano'
       WHEN ${ad_name} LIKE '%MÔNICA%' OR ${ad_name} LIKE '%Mônica%' THEN 'Mônica'
       WHEN ${ad_name} LIKE '%LIVIA KOELER%' OR ${ad_name} LIKE '%Livia Koeler%' THEN 'Livia Koeler'
+      WHEN ${ad_name} LIKE '%BARBARA%' OR ${ad_name} LIKE '%Barbara%' THEN 'Barbara'
 
               END ;;
   }
