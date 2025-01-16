@@ -128,7 +128,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%BRUH FERREYRA%' OR ${ad_name} LIKE '%Bruh%' OR ${ad_name} LIKE '%BRU FERREYRA%' THEN 'Bruh Ferreyra'
       WHEN ${ad_name} LIKE '%DAVI DANIEL%' OR ${ad_name} LIKE '%Davi%' THEN 'Davi Daniel'
       WHEN ${ad_name} LIKE '%IGOR%' OR ${ad_name} LIKE '%Igor%' THEN 'Igor Saringer'
-      WHEN ${ad_name} LIKE '%JESS%' OR ${ad_name} LIKE '%Jess%' THEN 'Jessr'
+      WHEN ${ad_name} LIKE '%JESS%' OR ${ad_name} LIKE '%Jess%' THEN 'Jessica'
       WHEN ${ad_name} LIKE '%THAIS%' OR ${ad_name} LIKE '%Thais%' THEN 'Thais'
       WHEN ${ad_name} LIKE '%MATHEUS%' OR ${ad_name} LIKE '%Matheus%' THEN 'Matheus'
       WHEN ${ad_name} LIKE '%JULIA ALVES%' OR ${ad_name} LIKE '%Julia Alves%' THEN 'Julia Alves'
@@ -136,6 +136,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%STHEFANY VITORIA%' OR ${ad_name} LIKE '%Sthefany Vitoria%' THEN 'Sthefany Vitoria'
       WHEN ${ad_name} LIKE '%BIANCA OLIVEIRA%' OR ${ad_name} LIKE '%Bianca Oliveira%' THEN 'Bianca Oliveira'
       WHEN ${ad_name} LIKE '%MARCELLA KOSINSKI%' OR ${ad_name} LIKE '%Marcella Kosinski%' THEN 'Marcella Kosinski'
+      WHEN ${ad_name} LIKE '%TRIZ HERMANO%' OR ${ad_name} LIKE '%TRIZ%' THEN 'Trizz Hermano'
+      WHEN ${ad_name} LIKE '%MÔNICA%' OR ${ad_name} LIKE '%Mônica%' THEN 'Mônica'
+      WHEN ${ad_name} LIKE '%LIVIA KOELER%' OR ${ad_name} LIKE '%Livia Koeler%' THEN 'Livia Koeler'
 
               END ;;
   }
