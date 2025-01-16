@@ -140,6 +140,18 @@ view: conjunto_mesclado2 {
               END ;;
   }
 
+
+  dimension: Criativos_format {
+    type: string
+    sql: CASE
+          WHEN ${ad_name} LIKE '%crespo divino' THEN 'Crespo divino'
+          WHEN ${ad_name} LIKE '%Mais cachos%' THEN 'Mais cachos'
+          WHEN ${ad_name} LIKE '%mido de milho%' THEN 'Amido de milho'
+
+
+      END ;;
+  }
+
   measure: total_impressions {
     type: sum
     sql: ${TABLE}.IMPRESSIONS ;;
