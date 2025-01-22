@@ -190,6 +190,27 @@ view: conjunto_mesclado2 {
       END ;;
   }
 
+
+  dimension: VIEWS25 {
+    type: number
+    sql: ${TABLE}.VIEWS25 ;;
+  }
+
+  dimension: VIEWS50 {
+    type: number
+    sql: ${TABLE}.VIEWS50 ;;
+  }
+
+  dimension: VIEWS75 {
+    type: number
+    sql: ${TABLE}.VIEWS75 ;;
+  }
+
+  dimension: VIEWS100 {
+    type: number
+    sql: ${TABLE}.VIEWS100 ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [creative_name, campaign_name, ad_group_name, ad_name]
