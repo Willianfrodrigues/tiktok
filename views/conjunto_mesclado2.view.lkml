@@ -134,9 +134,6 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%BRUNO CORREA%' OR ${ad_name} LIKE '%Bruno Correa%'  THEN 'Bruno Correa'
       WHEN ${ad_name} LIKE '%CLAUDIA LEITTE%' THEN 'Claudia Leitte'
       WHEN ${ad_name} LIKE '%ISADORA%' THEN 'Isadora'
-      WHEN ${ad_name} LIKE '%CLAUDIA LEITTE%' THEN 'Claudia Leitte'
-      WHEN ${ad_name} LIKE '%CLAUDIA LEITTE%' THEN 'Claudia Leitte'
-
       WHEN ${ad_name} LIKE '%VERI YAMAZOE%' THEN 'Veri Yamazoe'
       WHEN ${ad_name} LIKE '%NANNOCA%' THEN 'Nannoca'
       WHEN ${ad_name} LIKE '%GABRIELA CASTRO%' OR ${ad_name} LIKE '%Gabriela%' THEN 'Gabriela Castro'
