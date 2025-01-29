@@ -120,6 +120,8 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%HENRY HATAKEYAMA%' THEN 'Henry Hatakeyama'
       WHEN ${ad_name} LIKE '%THAIS FIGUEIREDO%' THEN 'Thais Figueiredo'
       WHEN ${ad_name} LIKE '%GI SAYURI%' THEN 'Gi Sayuri'
+      WHEN ${ad_name} LIKE '%BIA OLIVEIRA%' THEN 'Bia Oliveira'
+
       WHEN ${ad_name} LIKE '%VERI YAMAZOE%' THEN 'Veri Yamazoe'
       WHEN ${ad_name} LIKE '%NANNOCA%' THEN 'Nannoca'
       WHEN ${ad_name} LIKE '%GABRIELA CASTRO%' OR ${ad_name} LIKE '%Gabriela%' THEN 'Gabriela Castro'
