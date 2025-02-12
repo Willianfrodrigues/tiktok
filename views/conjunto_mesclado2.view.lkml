@@ -159,6 +159,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%RENAN%' OR ${ad_name} LIKE '%Renan Justino%' THEN 'Renan Justino'
       WHEN ${ad_name} LIKE '%João%' OR ${ad_name} LIKE '%joao%' THEN 'João'
       WHEN ${ad_name} LIKE '%CELSO KAMURA%' THEN 'Celso Kamura'
+      WHEN ${ad_name} LIKE '%POCAH %' THEN 'Pocah'
+      WHEN ${ad_name} LIKE '%DR. THIAGO%' THEN 'Dr. Thiago'
+      WHEN ${ad_name} LIKE '%CARLA%' THEN 'Carla'
 
               END ;;
   }
