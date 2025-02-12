@@ -36,7 +36,7 @@ view: conjunto_mesclado2 {
   }
   dimension: impressions {
     type: number
-    sql: ${TABLE}.IMPRESSIONS ;;
+    sql: COALESCE(${TABLE}.IMPRESSIONS, 0) ;;
   }
   dimension: platform {
     type: string
