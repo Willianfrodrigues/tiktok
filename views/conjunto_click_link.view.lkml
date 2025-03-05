@@ -66,6 +66,8 @@ view: conjunto_click_link {
               WHEN ${ad_name} LIKE '%BIANCA OLIVEIRA%' OR ${ad_name} LIKE '%Bianca Oliveira%' THEN 'Bianca Oliveira'
               WHEN ${ad_name} LIKE '%MARCELLA KOSINSKI%' OR ${ad_name} LIKE '%Marcella Kosinski%' THEN 'Marcella Kosinski'
               WHEN ${ad_name} LIKE '%João%' OR ${ad_name} LIKE '%joao%' THEN 'João'
+              WHEN ${ad_group_name} LIKE '%ana%' THEN 'Ana'
+              WHEN ${ad_group_name} LIKE '%carol%' THEN 'Carol'
 
 
 
