@@ -52,9 +52,12 @@ view: conjunto_mesclado2 {
     sql: CASE
         WHEN ${TABLE}.CAMPAIGN_NAME LIKE '%PHILCO%'
              AND CAST(${TABLE}.date AS date) = '2024-12-11' THEN ${TABLE}.IMPRESSIONS * 0.5
+        WHEN ${TABLE}.CAMPAIGN_NAME LIKE 'SKALA | AWARENESS | MP'
+             AND CAST(${TABLE}.date AS date) BETWEEN '2025-01-15' AND '2025-02-28' THEN ${TABLE}.IMPRESSIONS * 0.5
         ELSE ${TABLE}.IMPRESSIONS
-      END ;;
+    END ;;
   }
+
 
   dimension: influenciador {
     type: string
