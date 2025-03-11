@@ -64,7 +64,7 @@ view: conjunto_mesclado2 {
     type: string
     sql: CASE
         WHEN ${ad_group_name} LIKE '%JACKSON%' THEN 'Jackson'
-
+        WHEN ${ad_group_name} LIKE '%FE MEDEIROS%' THEN 'Fe Medeiros'
         WHEN ${ad_group_name} LIKE '%LUIZA%' THEN 'Luiza'
         WHEN ${ad_name} LIKE '%Care%' THEN 'Care'
          WHEN ${ad_name} LIKE '%DEBORA%' THEN 'Debora'
