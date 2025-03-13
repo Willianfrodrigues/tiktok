@@ -167,8 +167,8 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%POCAH %' THEN 'Pocah'
       WHEN ${ad_name} LIKE '%DR. THIAGO%' THEN 'Dr. Thiago'
       WHEN ${ad_name} LIKE '%CARLA%' THEN 'Carla'
-      WHEN ${ad_name} LIKE '%FERNANDA LIMA%' THEN 'Fernanda Lima'
-      WHEN ${ad_name} LIKE '%MARINA PUMAR%' THEN 'Marina Pumar'
+      WHEN ${ad_name} LIKE '%FERNANDA LIMA%' ${ad_name} LIKE '%Fernanda%' THEN 'Fernanda Lima'
+      WHEN ${ad_name} LIKE '%MARINA PUMAR%' ${ad_name} LIKE '%Marina P%'THEN 'Marina Pumar'
 
       WHEN ${ad_name} LIKE '%CINTHIA CRUZ%' THEN 'Cinthia Cruz'
 
