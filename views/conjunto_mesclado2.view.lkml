@@ -170,7 +170,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%FERNANDA LIMA%' OR ${ad_name} LIKE '%Fernanda%' THEN 'Fernanda Lima'
       WHEN ${ad_name} LIKE '%MARINA PUMAR%'OR  ${ad_name} LIKE '%Marina P%'THEN 'Marina Pumar'
       WHEN ${ad_name} LIKE '%PENELOPY JEAN%' THEN 'Penepoly Jean'
-
+      WHEN ${ad_name} LIKE '%FERNANDA%' THEN 'Fernanda'
       WHEN ${ad_name} LIKE '%CINTHIA CRUZ%' THEN 'Cinthia Cruz'
 
               END ;;
