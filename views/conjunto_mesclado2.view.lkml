@@ -63,6 +63,8 @@ view: conjunto_mesclado2 {
   dimension: influenciador {
     type: string
     sql: CASE
+          WHEN ${ad_name} LIKE '%MARIANA XAVIER%' THEN 'Mariana Xavier'
+
         WHEN ${ad_group_name} LIKE '%JACKSON%' THEN 'Jackson'
         WHEN ${ad_group_name} LIKE '%FE MEDEIROS%' THEN 'Fe Medeiros'
         WHEN ${ad_group_name} LIKE '%LUIZA%' THEN 'Luiza'
@@ -173,7 +175,6 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%FERNANDA%' THEN 'Fernanda'
       WHEN ${ad_name} LIKE '%CINTHIA CRUZ%' THEN 'Cinthia Cruz'
       WHEN ${ad_name} LIKE '%JULIA RODRIGUES%' THEN 'Julia Rodrigues'
-      WHEN ${ad_name} LIKE '%MARIANA XAVIER%' THEN 'Mariana Xavier'
 
               END ;;
   }
