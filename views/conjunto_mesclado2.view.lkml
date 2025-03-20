@@ -173,6 +173,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%FERNANDA%' THEN 'Fernanda'
       WHEN ${ad_name} LIKE '%CINTHIA CRUZ%' THEN 'Cinthia Cruz'
       WHEN ${ad_name} LIKE '%JULIA RODRIGUES%' THEN 'Julia Rodrigues'
+      WHEN ${ad_name} LIKE '%MARIANA XAVIER%' THEN 'Mariana Xavier'
 
               END ;;
   }
