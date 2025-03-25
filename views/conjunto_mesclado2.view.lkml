@@ -177,7 +177,10 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%MANUELA PEREZ%' THEN 'Manuela Perez'
       WHEN ${ad_name} LIKE '%IVI PIZZOT %' THEN 'Ivi Pizzot'
       WHEN ${ad_name} LIKE '%JULIA RODRIGUES%' THEN 'Julia Rodrigues'
-
+      WHEN ${ad_name} LIKE '%ANDERSON VIEIRA%' THEN 'Anderson Vieira'
+      WHEN ${ad_name} LIKE '%LUEDJI LUNA%' THEN 'Luedji Luna'
+      WHEN ${ad_name} LIKE '%MARI MOON%' THEN 'Mari Moon'
+      WHEN ${ad_name} LIKE '%TITI MULLER' THEN 'Titi Muller'
               END ;;
   }
 
