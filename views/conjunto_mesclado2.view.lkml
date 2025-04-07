@@ -184,13 +184,14 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%PENELOPY JEAN%' THEN 'Penepoly Jean'
       WHEN ${ad_name} LIKE '%FERNANDA%' THEN 'Fernanda'
       WHEN ${ad_name} LIKE '%CINTHIA CRUZ%' THEN 'Cinthia Cruz'
-      WHEN ${ad_name} LIKE '%MANUELA PEREZ%' THEN 'Manuela Perez'
-      WHEN ${ad_name} LIKE '%IVI PIZZOT %' THEN 'Ivi Pizzot'
+      WHEN ${ad_name} LIKE '%MANUELA PEREZ%' OR  ${ad_name} LIKE '%Manuela Perez%' THEN 'Manuela Perez'
+      WHEN ${ad_name} LIKE '%IVI PIZZOT %' OR  ${ad_name} LIKE '%Ivi Pizzot%' THEN 'Ivi Pizzot'
       WHEN ${ad_name} LIKE '%JULIA RODRIGUES%' THEN 'Julia Rodrigues'
       WHEN ${ad_name} LIKE '%ANDERSON VIEIRA%' THEN 'Anderson Vieira'
       WHEN ${ad_name} LIKE '%LUEDJI LUNA%' THEN 'Luedji Luna'
       WHEN ${ad_name} LIKE '%MARI MOON%' THEN 'Mari Moon'
       WHEN ${ad_name} LIKE '%TITI MULLER%' THEN 'Titi Muller'
+      WHEN ${ad_name} LIKE '%NINA GABRIELLA%' THEN 'Nina Gabriella'
               END ;;
   }
 
