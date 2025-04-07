@@ -63,6 +63,7 @@ view: conjunto_mesclado2 {
   dimension: influenciador {
     type: string
     sql: CASE
+    WHEN ${ad_name} LIKE '%ANANDA%' OR ${ad_name} LIKE '%Ananda%' THEN 'Ananda'
           WHEN ${ad_name} LIKE '%ANANDA%' THEN 'Ananda'
           WHEN ${ad_name} LIKE '%MARI KRUGER%' THEN 'Mari kruger'
           WHEN ${ad_name} LIKE '%DRA. LILIAN%' THEN 'Dra. Lilian'
