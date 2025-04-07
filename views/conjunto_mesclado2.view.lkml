@@ -67,7 +67,6 @@ view: conjunto_mesclado2 {
           WHEN ${ad_name} LIKE '%MANU XAVIER%' THEN 'Manu Xavier'
           WHEN ${ad_name} LIKE '%MYLLENA DALLA%' THEN 'Myllena Dalla'
           WHEN ${ad_name} LIKE '%Flavia Charallo%' THEN 'Flavia Charallo'
-
           WHEN ${ad_name} LIKE '%ANANDA%' OR ${ad_name} LIKE '%Ananda%' THEN 'Ananda'
           WHEN ${ad_name} LIKE '%ANANDA%' THEN 'Ananda'
           WHEN ${ad_name} LIKE '%MARI KRUGER%' THEN 'Mari kruger'
