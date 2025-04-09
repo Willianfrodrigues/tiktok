@@ -246,6 +246,11 @@ view: conjunto_mesclado2 {
     sql: ${TABLE}.VIEWS25 ;;
   }
 
+  dimension: VIEWS6 {
+    type: number
+    sql: ${TABLE}.VIEWS6 ;;
+  }
+
   dimension: VIEWS50 {
     type: number
     sql: ${TABLE}.VIEWS50 ;;
