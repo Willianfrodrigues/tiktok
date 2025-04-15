@@ -192,7 +192,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%LUEDJI LUNA%' THEN 'Luedji Luna'
       WHEN ${ad_name} LIKE '%MARI MOON%' THEN 'Mari Moon'
       WHEN ${ad_name} LIKE '%TITI MULLER%' THEN 'Titi Muller'
-
+      WHEN ${ad_name} LIKE '%NAIUMI%' THEN 'Naiumi'
               END ;;
   }
 
