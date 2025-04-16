@@ -202,6 +202,10 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%Lidi Lisboa%' THEN 'Lidi Lisboa'
       WHEN ${ad_group_name} LIKE '%Marina Xavier%' THEN 'Marina Xavier'
       WHEN ${ad_group_name} LIKE '%BIA SOUZA%' THEN 'Bia Souza'
+      WHEN ${ad_group_name} LIKE '%GIULIA BE%' THEN 'Giulia Be'
+      WHEN ${ad_group_name} LIKE '%MA PANTALEÃO%' THEN 'Ma Pantaleão'
+
+
               END ;;
   }
 
