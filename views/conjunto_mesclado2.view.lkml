@@ -207,9 +207,9 @@ view: conjunto_mesclado2 {
 
 
       WHEN ${ad_group_name} LIKE '%Ananda%' THEN 'Ananda'
-      WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name}} LIKE '%CATARINA%' THEN 'Catarina'
+      WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name} LIKE '%CATARINA%' THEN 'Catarina'
       WHEN ${ad_group_name} LIKE '%Emilly%' THEN 'Emilly'
-      WHEN ${ad_group_name} LIKE '%Cecilia%' OR  ${ad_group_name}} LIKE '%CECÍLIA%' THEN 'Cecília '
+      WHEN ${ad_group_name} LIKE '%Cecilia%' OR  ${ad_group_name} LIKE '%CECÍLIA%' THEN 'Cecília '
 
 
               END ;;
