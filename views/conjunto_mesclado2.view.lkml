@@ -204,8 +204,8 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%BIA SOUZA%' THEN 'Bia Souza'
       WHEN ${ad_group_name} LIKE '%GIULIA BE%' THEN 'Giulia Be'
       WHEN ${ad_group_name} LIKE '%MA PANTALEÃO%' THEN 'Ma Pantaleão'
-
-
+      WHEN ${ad_group_name} LIKE '%THAÍS BRAZ%' THEN 'Thaís Braz'
+      WHEN ${ad_group_name} LIKE '%VICTORIA DINIZ%' THEN 'Victoria Diniz'
       WHEN ${ad_group_name} LIKE '%Ananda%' THEN 'Ananda'
       WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name} LIKE '%CATARINA%' THEN 'Catarina'
       WHEN ${ad_group_name} LIKE '%Emilly%' THEN 'Emilly'
