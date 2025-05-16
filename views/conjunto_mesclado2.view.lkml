@@ -213,21 +213,21 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%NAUTA MC%' THEN 'Nauta Mc'
       WHEN ${ad_group_name} LIKE '%fernanda Lima%' THEN 'Fernanda Lima'
 
-      WHEN ${ad_group_name} LIKE '%ISABELA ALVES%' THEN 'Isabela Alves'
+      WHEN ${ad_group_name} LIKE '%ISABELA ALVES%' OR ${ad_name} LIKE '%Isabela%' THEN 'Isabela Alves'
 
-      WHEN ${ad_group_name} LIKE '%CAROL FERNANDES%' THEN 'Carol Fernandes'
+      WHEN ${ad_group_name} LIKE '%CAROL FERNANDES%' OR ${ad_name} LIKE '%Carol Fernandes%' THEN 'Carol Fernandes'
 
-      WHEN ${ad_group_name} LIKE '%BRENDA REGIO%' THEN 'Brenda Regio'
+      WHEN ${ad_group_name} LIKE '%BRENDA REGIO%' OR ${ad_name} LIKE '%Brenda Regio%' THEN 'Brenda Regio'
 
-      WHEN ${ad_group_name} LIKE '%ANDERSON MARÉ%' THEN 'Anderson Maré'
+      WHEN ${ad_group_name} LIKE '%ANDERSON MARÉ%' OR ${ad_name} LIKE '%Anderson Mare%' THEN 'Anderson Maré'
 
-      WHEN ${ad_group_name} LIKE '%MARTA SOUZA%' THEN 'Marta Souza'
+      WHEN ${ad_group_name} LIKE '%MARTA SOUZA%' OR ${ad_name} LIKE '%Marta Souza%' THEN 'Marta Souza'
 
-      WHEN ${ad_group_name} LIKE '%CAROL FELIS%' THEN 'Carol Felis'
+      WHEN ${ad_group_name} LIKE '%CAROL FELIS%' OR ${ad_name} LIKE '%Carol Felis%' THEN 'Carol Felis'
 
-      WHEN ${ad_group_name} LIKE '%THIAGO SIMPATIA %' THEN 'Thiago Simpatia'
+      WHEN ${ad_group_name} LIKE '%THIAGO SIMPATIA %' OR ${ad_name} LIKE '%Thiago Simpatia%' THEN 'Thiago Simpatia'
 
-       WHEN ${ad_group_name} LIKE '%FLAVIA RODRIGUES%' THEN 'Flavia Rodrigues'
+       WHEN ${ad_group_name} LIKE '%FLAVIA RODRIGUES%' OR ${ad_name} LIKE '%Flavia Rodrigues%' THEN 'Flavia Rodrigues'
 
       WHEN ${ad_group_name} LIKE '%marina pumar%' THEN 'Marina Pumar'
       WHEN ${ad_group_name} LIKE '%SUBCELEBRITIES %' THEN 'Subcelebrities'
