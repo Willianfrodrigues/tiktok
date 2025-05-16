@@ -210,6 +210,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%THAÍS BRAZ%' THEN 'Thaís Braz'
       WHEN ${ad_group_name} LIKE '%VICTORIA DINIZ%' THEN 'Victoria Diniz'
       WHEN ${ad_group_name} LIKE '%Ananda%' THEN 'Ananda'
+      WHEN ${ad_group_name} LIKE '%NAUTA MC%' THEN 'Nauta Mc'
       WHEN ${ad_group_name} LIKE '%fernanda Lima%' THEN 'Fernanda Lima'
       WHEN ${ad_group_name} LIKE '%marina pumar%' THEN 'Marina Pumar'
       WHEN ${ad_group_name} LIKE '%SUBCELEBRITIES %' THEN 'Subcelebrities'
