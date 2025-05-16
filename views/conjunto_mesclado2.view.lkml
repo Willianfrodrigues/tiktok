@@ -227,6 +227,8 @@ view: conjunto_mesclado2 {
 
       WHEN ${ad_group_name} LIKE '%THIAGO SIMPATIA %' THEN 'Thiago Simpatia'
 
+       WHEN ${ad_group_name} LIKE '%FLAVIA RODRIGUES%' THEN 'Flavia Rodrigues'
+
       WHEN ${ad_group_name} LIKE '%marina pumar%' THEN 'Marina Pumar'
       WHEN ${ad_group_name} LIKE '%SUBCELEBRITIES %' THEN 'Subcelebrities'
       WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name} LIKE '%CATARINA%' THEN 'Catarina'
