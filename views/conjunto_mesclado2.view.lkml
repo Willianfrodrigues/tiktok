@@ -212,6 +212,21 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%Ananda%' THEN 'Ananda'
       WHEN ${ad_group_name} LIKE '%NAUTA MC%' THEN 'Nauta Mc'
       WHEN ${ad_group_name} LIKE '%fernanda Lima%' THEN 'Fernanda Lima'
+
+      WHEN ${ad_group_name} LIKE '%ISABELA ALVES%' THEN 'Isabela Alves'
+
+      WHEN ${ad_group_name} LIKE '%CAROL FERNANDES%' THEN 'Carol Fernandes'
+
+      WHEN ${ad_group_name} LIKE '%BRENDA REGIO%' THEN 'Brenda Regio'
+
+      WHEN ${ad_group_name} LIKE '%ANDERSON MARÉ%' THEN 'Anderson Maré'
+
+      WHEN ${ad_group_name} LIKE '%MARTA SOUZA%' THEN 'Marta Souza'
+
+      WHEN ${ad_group_name} LIKE '%CAROL FELIS%' THEN 'Carol Felis'
+
+      WHEN ${ad_group_name} LIKE '%THIAGO SIMPATIA %' THEN 'Thiago Simpatia'
+
       WHEN ${ad_group_name} LIKE '%marina pumar%' THEN 'Marina Pumar'
       WHEN ${ad_group_name} LIKE '%SUBCELEBRITIES %' THEN 'Subcelebrities'
       WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name} LIKE '%CATARINA%' THEN 'Catarina'
