@@ -195,6 +195,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%EDUARDA MELO %' THEN 'Eduarda Melo'
       WHEN ${ad_name} LIKE '%ROMULO NAVAJAS%' THEN 'Romulo Navajas'
       WHEN ${ad_name} LIKE '%NAIUMI%' THEN 'Naiumi'
+      WHEN ${ad_name} LIKE '%TRIXXIE%' THEN 'Trixxie'
       WHEN ${ad_name} LIKE '%CAROL MARTINS%' OR ${ad_name} LIKE '%Carol Martins%'THEN 'Carol Martins'
       WHEN ${ad_group_name} LIKE '%Marina Pumar%' THEN 'Marina Pumar'
       WHEN ${ad_group_name} LIKE '%Fernanda Lima%' THEN 'Fernanda Lima'
