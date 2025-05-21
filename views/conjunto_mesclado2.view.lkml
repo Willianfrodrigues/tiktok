@@ -180,6 +180,8 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%POCAH %' THEN 'Pocah'
       WHEN ${ad_name} LIKE '%DR. THIAGO%' THEN 'Dr. Thiago'
       WHEN ${ad_name} LIKE '%CARLA%' THEN 'Carla'
+      WHEN ${ad_name} LIKE '%Celso Zucatelli%' THEN 'Celso Zucatelli'
+      WHEN ${ad_name} LIKE '%BRUH FERRERA%' OR  ${ad_name} LIKE '%BRUH FERREIRA%' THEN 'Bruh Ferreira'
       WHEN ${ad_name} LIKE '%FERNANDA LIMA%' OR ${ad_name} LIKE '%Fernanda%' THEN 'Fernanda Lima'
       WHEN ${ad_name} LIKE '%MARINA PUMAR%'OR  ${ad_name} LIKE '%Marina P%'THEN 'Marina Pumar'
       WHEN ${ad_name} LIKE '%PENELOPY JEAN%' THEN 'Penepoly Jean'
