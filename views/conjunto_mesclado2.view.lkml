@@ -204,6 +204,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%DANI SOOMIN%' THEN 'Dani Soomin'
       WHEN ${ad_name} LIKE '%MONY TAVARES%' THEN 'Mony Tavares'
       WHEN ${ad_name} LIKE '%GABE ZANQUI%' THEN 'Gabe Zanqui'
+      WHEN ${ad_name} LIKE '%DINAMICHI%' THEN 'Dinamichi'
+      WHEN ${ad_name} LIKE '%Beatris Brantes%' THEN 'Beatris Brantes'
+      WHEN ${ad_name} LIKE '%NICOLAS JUMP%'  OR  ${ad_name} LIKE '%Nicolas Jump%' THEN 'Nicolas Jump'
       WHEN ${ad_name} LIKE '%CAROL MARTINS%' OR ${ad_name} LIKE '%Carol Martins%'THEN 'Carol Martins'
       WHEN ${ad_group_name} LIKE '%Marina Pumar%' THEN 'Marina Pumar'
       WHEN ${ad_group_name} LIKE '%Fernanda Lima%' THEN 'Fernanda Lima'
@@ -219,7 +222,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%THAÍS BRAZ%' THEN 'Thaís Braz'
       WHEN ${ad_group_name} LIKE '%VICTORIA DINIZ%' THEN 'Victoria Diniz'
       WHEN ${ad_group_name} LIKE '%Ananda%' THEN 'Ananda'
-      WHEN ${ad_group_name} LIKE '%NAUTA MC%' THEN 'Nauta Mc'
+      WHEN ${ad_group_name} LIKE '%NAUTA MC%'  OR  ${ad_name} LIKE '%Nauta Mc%'THEN 'Nauta Mc'
       WHEN ${ad_group_name} LIKE '%fernanda Lima%' THEN 'Fernanda Lima'
 
       WHEN ${ad_group_name} LIKE '%ISABELA ALVES%' OR ${ad_name} LIKE '%Isabela%' THEN 'Isabela Alves'
