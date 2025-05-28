@@ -207,6 +207,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%LETICIA PANAR%' THEN 'Leticia Panar'
       WHEN ${ad_name} LIKE '%AÇUCENA%' THEN 'Açucena'
       WHEN ${ad_name} LIKE '%CAMILLE%' THEN 'Camille'
+      WHEN ${ad_name} LIKE '%SABRINA SATO%' THEN 'Sabrina Sato'
       WHEN ${ad_name} LIKE '%DANI SOOMIN%' THEN 'Dani Soomin'
       WHEN ${ad_name} LIKE '%MONY TAVARES%' THEN 'Mony Tavares'
       WHEN ${ad_name} LIKE '%GABE ZANQUI%' THEN 'Gabe Zanqui'
