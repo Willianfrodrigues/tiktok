@@ -63,6 +63,11 @@ view: conjunto_mesclado2 {
   dimension: influenciador {
     type: string
     sql: CASE
+          WHEN ${ad_name} LIKE '%FLÁVIA LEAL%' OR ${ad_name} LIKE '%FLAVIA LEAL%' THEN 'Flavia Leal'
+           WHEN ${ad_name} LIKE '%MAITÊ VOLPINI%' THEN 'Ale Kremer'
+           WHEN ${ad_name} LIKE '%FRAN REZENDE%' THEN 'Fran Rezende'
+           WHEN ${ad_name} LIKE '%DUDA RIEDEL%' THEN 'Duda Riedel'
+
           WHEN ${ad_name} LIKE '%NINA GABRIELLA%' OR ${ad_name} LIKE '%NINA GABRIELA%' OR ${ad_name} LIKE '%Nina Gabriela%'   THEN 'Nina Gabriella'
           WHEN ${ad_name} LIKE '%Ale Kremer%' THEN 'Ale Kremer'
           WHEN ${ad_name} LIKE '%MANU XAVIER%' THEN 'Manu Xavier'
