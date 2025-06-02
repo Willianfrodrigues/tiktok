@@ -212,7 +212,6 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%MONY TAVARES%' THEN 'Mony Tavares'
       WHEN ${ad_name} LIKE '%GABE ZANQUI%' THEN 'Gabe Zanqui'
       WHEN ${ad_name} LIKE '%AMANDA SANTOS%' THEN 'Amanda Santos'
-
       WHEN ${ad_name} LIKE '%DINAMICHI%' OR ${ad_name} LIKE '%Dinamichi%' THEN 'Dinamichi'
       WHEN ${ad_name} LIKE '%Beatris Brantes%' OR  ${ad_name} LIKE '%BEATRIS BRANTES%' THEN 'Beatris Brantes'
       WHEN ${ad_name} LIKE '%NICOLAS JUMP%'  OR  ${ad_name} LIKE '%Nicolas Jump%' THEN 'Nicolas Jump'
