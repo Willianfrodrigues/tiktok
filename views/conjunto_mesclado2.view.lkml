@@ -209,8 +209,8 @@ view: conjunto_mesclado2 {
 
       WHEN ${ad_name} LIKE '%PAMELA TOMÉ%' THEN 'Pamela Tomé'
       WHEN ${ad_name} LIKE '%RAISSA SANTOS%' THEN 'Raissa Santos'
-      WHEN ${ad_name} LIKE '%IRÊ ALVES%' THEN 'Irê Alves'
-      WHEN ${ad_name} LIKE '%JULIA COX%' THEN 'Julia Cox'
+      WHEN ${ad_name} LIKE '%IRÊ ALVES%' OR  ${ad_name} LIKE '%Irê Alves%' THEN 'Irê Alves'
+      WHEN ${ad_name} LIKE '%JULIA COX%' OR  ${ad_name} LIKE '%Julia Cox%' THEN 'Julia Cox'
       WHEN ${ad_name} LIKE '%CAMILLE%' THEN 'Camille'
       WHEN ${ad_name} LIKE '%SABRINA SATO%' THEN 'Sabrina Sato'
       WHEN ${ad_name} LIKE '%DANI SOOMIN%' THEN 'Dani Soomin'
