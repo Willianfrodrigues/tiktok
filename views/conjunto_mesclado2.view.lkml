@@ -246,7 +246,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%Ananda%' THEN 'Ananda'
       WHEN ${ad_group_name} LIKE '%NAUTA MC%'  OR  ${ad_name} LIKE '%Nauta Mc%'THEN 'Nauta Mc'
       WHEN ${ad_group_name} LIKE '%fernanda Lima%' THEN 'Fernanda Lima'
-
+      WHEN ${ad_group_name} LIKE '%ERICK COSTA%' OR ${ad_name} LIKE '%Eric Costa%' THEN 'Eric Costa'
       WHEN ${ad_group_name} LIKE '%ISABELA ALVES%' OR ${ad_name} LIKE '%Isabela%' THEN 'Isabela Alves'
 
       WHEN ${ad_group_name} LIKE '%CAROL FERNANDES%' OR ${ad_name} LIKE '%Carol Fernandes%' THEN 'Carol Fernandes'
