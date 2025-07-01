@@ -68,7 +68,7 @@ view: conjunto_mesclado2 {
            WHEN ${ad_name} LIKE '%CAROL E NATI%' OR  ${ad_name} LIKE '%Carol e Nati%' THEN 'Carol e Nati'
            WHEN ${ad_name} LIKE '%YASMIN AKUTSU%' OR  ${ad_name} LIKE '%Yasmin Akutsu%' THEN 'Yasmin Akutsu'
            WHEN ${ad_name} LIKE '%SAPATOKERS%' OR  ${ad_name} LIKE '%Sapatokers%' THEN 'Sapatokers'
-           WHEN ${ad_name} LIKE '%AMANDA MOTA%' OR  ${ad_name} LIKE '%Amanda Mota%' THEN 'Amanda Mota%'
+           WHEN ${ad_name} LIKE '%AMANDA MOTA%' OR  ${ad_name} LIKE '%Amanda Mota%' THEN 'Amanda Mota'
            WHEN ${ad_name} LIKE '%AMANDA COUTINHO%' OR  ${ad_name} LIKE '%Amanda Coutinho%' THEN 'Amanda Coutinho'
            WHEN ${ad_name} LIKE '%MAYARA RODRIGUES%' OR  ${ad_name} LIKE '%Maiara Rodrigues%' THEN 'Mayara Rodrigues'
            WHEN ${ad_name} LIKE '%WENDELL ALE%' OR  ${ad_name} LIKE '%Wendell Alexandre%' THEN 'Wendell Alexandre'
