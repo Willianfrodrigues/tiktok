@@ -293,9 +293,9 @@ view: conjunto_mesclado2 {
 
       WHEN ${ad_group_name} LIKE '%marina pumar%' THEN 'Marina Pumar'
       WHEN ${ad_group_name} LIKE '%SUBCELEBRITIES %' THEN 'Subcelebrities'
-      WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name} LIKE '%CATARINA%' THEN 'Catarina'
-      WHEN ${ad_group_name} LIKE '%Emilly%' THEN 'Emilly'
-      WHEN ${ad_group_name} LIKE '%Cecilia%' OR  ${ad_group_name} LIKE '%CECÍLIA%' OR  ${ad_group_name} LIKE '%Cecília%'  THEN 'Cecília '
+      WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name} LIKE '%CATARINA%' OR ${ad_name} LIKE '%Catarina %' THEN 'Catarina'
+      WHEN ${ad_group_name} LIKE '%Emilly%' OR ${ad_name} LIKE '%Emilly%' THEN 'Emilly'
+      WHEN ${ad_group_name} LIKE '%Cecilia%' OR  ${ad_group_name} LIKE '%CECÍLIA%' OR  ${ad_group_name} LIKE '%Cecília%' OR ${ad_name} LIKE '%Cecilia%'  THEN 'Cecília '
 
 
               END ;;
