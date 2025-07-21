@@ -80,8 +80,6 @@ view: conjunto_mesclado2 {
            WHEN ${ad_name} LIKE '%THAYNARA%' OR  ${ad_name} LIKE '%Thaynara%' THEN 'Thaynara'
            WHEN ${ad_name} LIKE '%DRA. LILAN%' OR  ${ad_name} LIKE '%Dra. Lilan%' THEN 'Dra. Lilan'
 
-
-
            WHEN ${ad_name} LIKE '%DR ALEX LACERDA%' OR  ${ad_name} LIKE '%Alex Lacerda%' THEN 'Dr. Alex Lacerda'
            WHEN ${ad_name} LIKE '%THIAGO CORDOVA%' OR  ${ad_name} LIKE '%Thiago%' THEN 'Thiago'
            WHEN ${ad_name} LIKE '%CAROL E NATI%' OR  ${ad_name} LIKE '%Carol e Nati%' THEN 'Carol e Nati'
@@ -93,7 +91,6 @@ view: conjunto_mesclado2 {
            WHEN ${ad_name} LIKE '%WENDELL ALE%' OR  ${ad_name} LIKE '%Wendell Alexandre%' THEN 'Wendell Alexandre'
            WHEN ${ad_name} LIKE '%DANIEL MARIANO%' OR  ${ad_name} LIKE '%Daniel Mariano%' THEN 'Daniel Mariano'
            WHEN ${ad_name} LIKE '%MABI MOREIRA%' OR  ${ad_name} LIKE '%Mabi Moreira%' THEN 'Mabi Moreira'
-
           WHEN ${ad_name} LIKE '%FLÁVIA LEAL%' OR ${ad_name} LIKE '%FLAVIA LEAL%' OR ${ad_name} LIKE '%Flavia Leal%' THEN 'Flavia Leal'
            WHEN ${ad_name} LIKE '%MAITÊ VOLPINI%' THEN 'Ale Kremer'
            WHEN ${ad_name} LIKE '%FRAN REZENDE%' OR ${ad_name} LIKE '%Fran Rezende%' THEN 'Fran Rezende'
@@ -130,9 +127,7 @@ view: conjunto_mesclado2 {
           WHEN ${ad_name} LIKE '%VIC MIRANDA%' THEN 'Vic Miranda'
           WHEN ${ad_name} LIKE '%LUIZA SOBRAL%' THEN 'Luiza Sobral'
           WHEN ${ad_name} LIKE '%RITA CARREIRA%' THEN 'Rita Carreira'
-
           WHEN ${ad_name} LIKE '%Maite Volpini%' OR ${ad_name} LIKE '%MAITE VOLPINI%' THEN 'Maite Volpini'
-
       WHEN ${ad_name} LIKE '%DAYANNE%' THEN 'Dayanne'
       WHEN ${ad_name} LIKE '%NAT DEUSDARÁ%' THEN 'Nat Deusdará'
       WHEN ${ad_name} LIKE '%BIANCA DARRUIZ%' THEN 'Bianca Darruiz'
@@ -240,10 +235,8 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%TRIXXIE%' THEN 'Trixxie'
       WHEN ${ad_name} LIKE '%LETICIA PANAR%' THEN 'Leticia Panar'
       WHEN ${ad_name} LIKE '%AÇUCENA%' THEN 'Açucena'
-
       WHEN ${ad_name} LIKE '%Steffane%' THEN 'Steffane'
       WHEN ${ad_name} LIKE '%Yasmin%' THEN 'Yasmin'
-
       WHEN ${ad_name} LIKE '%PAMELA TOMÉ%' THEN 'Pamela Tomé'
       WHEN ${ad_name} LIKE '%RAISSA SANTOS%' THEN 'Raissa Santos'
       WHEN ${ad_name} LIKE '%IRÊ ALVES%' OR  ${ad_name} LIKE '%Irê Alves%' THEN 'Irê Alves'
@@ -276,21 +269,13 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%fernanda Lima%' THEN 'Fernanda Lima'
       WHEN ${ad_group_name} LIKE '%ERICK COSTA%' OR ${ad_name} LIKE '%Eric Costa%' THEN 'Eric Costa'
       WHEN ${ad_group_name} LIKE '%ISABELA ALVES%' OR ${ad_name} LIKE '%Isabela%' THEN 'Isabela Alves'
-
       WHEN ${ad_group_name} LIKE '%CAROL FERNANDES%' OR ${ad_name} LIKE '%Carol Fernandes%' THEN 'Carol Fernandes'
-
       WHEN ${ad_group_name} LIKE '%BRENDA REGIO%' OR ${ad_name} LIKE '%Brenda Regio%' THEN 'Brenda Regio'
-
       WHEN ${ad_group_name} LIKE '%ANDERSON MARÉ%' OR ${ad_name} LIKE '%Anderson Mare%' THEN 'Anderson Maré'
-
       WHEN ${ad_group_name} LIKE '%MARTA SOUZA%' OR ${ad_name} LIKE '%Marta Souza%' THEN 'Marta Souza'
-
       WHEN ${ad_group_name} LIKE '%CAROL FELIS%' OR ${ad_name} LIKE '%Carol Felis%' THEN 'Carol Felis'
-
       WHEN ${ad_group_name} LIKE '%THIAGO SIMPATIA %' OR ${ad_name} LIKE '%Thiago Simpatia%' THEN 'Thiago Simpatia'
-
        WHEN ${ad_group_name} LIKE '%FLAVIA RODRIGUES%' OR ${ad_name} LIKE '%Flavia Rodrigues%' THEN 'Flavia Rodrigues'
-
       WHEN ${ad_group_name} LIKE '%marina pumar%' THEN 'Marina Pumar'
       WHEN ${ad_group_name} LIKE '%SUBCELEBRITIES %' THEN 'Subcelebrities'
       WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name} LIKE '%CATARINA%' OR ${ad_name} LIKE '%Catarina %' THEN 'Catarina'
