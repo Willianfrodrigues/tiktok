@@ -72,6 +72,10 @@ view: conjunto_mesclado2 {
            WHEN ${ad_name} LIKE '%AMANDA MOTA%' OR  ${ad_name} LIKE '%Amanda Mota%' THEN 'Amanda Mota'
            WHEN ${ad_name} LIKE '%BEA%' OR  ${ad_name} LIKE '%Bea%' THEN 'Bea'
            WHEN ${ad_name} LIKE '%VIVIAN LIMA%' OR  ${ad_name} LIKE '%Vivian lima%' THEN 'Vivian Lima'
+           WHEN ${ad_name} LIKE '%LUANNE HOLANDA%' OR  ${ad_name} LIKE '%Luanne Holanda%' THEN 'Luanne Holanda'
+           WHEN ${ad_name} LIKE '%MARIA RITA%' OR  ${ad_name} LIKE '%Maria Rita%' THEN 'Maria Rita'
+
+
 
            WHEN ${ad_name} LIKE '%DR ALEX LACERDA%' OR  ${ad_name} LIKE '%Alex Lacerda%' THEN 'Dr. Alex Lacerda'
            WHEN ${ad_name} LIKE '%THIAGO CORDOVA%' OR  ${ad_name} LIKE '%Thiago%' THEN 'Thiago'
