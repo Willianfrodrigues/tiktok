@@ -63,6 +63,16 @@ view: conjunto_mesclado2 {
   dimension: influenciador {
     type: string
     sql: CASE
+           WHEN ${ad_name} LIKE '%CLARA DINIZ%' OR  ${ad_name} LIKE '%Clara Diniz%' THEN 'Clara Diniz'
+           WHEN ${ad_name} LIKE '%ANA MARIA DO TERRA%' OR  ${ad_name} LIKE '%Ana Maria do Terra%' THEN 'Ana Maria do Terra '
+           WHEN ${ad_name} LIKE '%ANA CAROLINA%' OR  ${ad_name} LIKE '%Ana Carolina%' THEN 'Ana Carolina'
+           WHEN ${ad_name} LIKE '%MÔNICK ANDREZZA%' OR  ${ad_name} LIKE '%Mônick Andrezza%' THEN 'Mônick Andrezza'
+           WHEN ${ad_name} LIKE '%DANI SILVA%' OR  ${ad_name} LIKE '%Dani Silva%' THEN 'Dani Silva'
+           WHEN ${ad_name} LIKE '%DAPHNE SOUZA%' OR  ${ad_name} LIKE '%Daphne Souza%' THEN 'Daphne Souza'
+           WHEN ${ad_name} LIKE '%AMANDA MOTA%' OR  ${ad_name} LIKE '%Amanda Mota%' THEN 'Amanda Mota'
+           WHEN ${ad_name} LIKE '%BEA%' OR  ${ad_name} LIKE '%Bea%' THEN 'Bea'
+           WHEN ${ad_name} LIKE '%VIVIAN LIMA%' OR  ${ad_name} LIKE '%Vivian lima%' THEN 'Vivian Lima'
+
            WHEN ${ad_name} LIKE '%DR ALEX LACERDA%' OR  ${ad_name} LIKE '%Alex Lacerda%' THEN 'Dr. Alex Lacerda'
            WHEN ${ad_name} LIKE '%THIAGO CORDOVA%' OR  ${ad_name} LIKE '%Thiago%' THEN 'Thiago'
            WHEN ${ad_name} LIKE '%CAROL E NATI%' OR  ${ad_name} LIKE '%Carol e Nati%' THEN 'Carol e Nati'
