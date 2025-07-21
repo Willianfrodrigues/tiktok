@@ -77,6 +77,8 @@ view: conjunto_mesclado2 {
            WHEN ${ad_name} LIKE '%DUDA MARTINS%' OR  ${ad_name} LIKE '%Duda Martins%' THEN 'Duda Martins'
            WHEN ${ad_name} LIKE '%CAROL FIGUEIREDO%' OR  ${ad_name} LIKE '%Carol Figueiredo%' THEN 'Carol Figueiredo'
            WHEN ${ad_name} LIKE '%STEFFANE%' OR  ${ad_name} LIKE '%Steffane%' THEN 'Steffane'
+           WHEN ${ad_name} LIKE '%THAYNARA%' OR  ${ad_name} LIKE '%Thaynara%' THEN 'Thaynara'
+           WHEN ${ad_name} LIKE '%DRA. LILAN%' OR  ${ad_name} LIKE '%Dra. Lilan%' THEN 'Dra. Lilan'
 
 
 
