@@ -91,7 +91,7 @@ view: conjunto_mesclado2 {
            WHEN ${ad_name} LIKE '%WENDELL ALE%' OR  ${ad_name} LIKE '%Wendell Alexandre%' THEN 'Wendell Alexandre'
            WHEN ${ad_name} LIKE '%DANIEL MARIANO%' OR  ${ad_name} LIKE '%Daniel Mariano%' THEN 'Daniel Mariano'
            WHEN ${ad_name} LIKE '%MABI MOREIRA%' OR  ${ad_name} LIKE '%Mabi Moreira%' THEN 'Mabi Moreira'
-          WHEN ${ad_name} LIKE '%FLÁVIA LEAL%' OR ${ad_name} LIKE '%FLAVIA LEAL%' OR ${ad_name} LIKE '%Flavia Leal%' THEN 'Flavia Leal'
+           WHEN ${ad_name} LIKE '%FLÁVIA LEAL%' OR ${ad_name} LIKE '%FLAVIA LEAL%' OR ${ad_name} LIKE '%Flavia Leal%' THEN 'Flavia Leal'
            WHEN ${ad_name} LIKE '%MAITÊ VOLPINI%' THEN 'Ale Kremer'
            WHEN ${ad_name} LIKE '%FRAN REZENDE%' OR ${ad_name} LIKE '%Fran Rezende%' THEN 'Fran Rezende'
            WHEN ${ad_name} LIKE '%DUDA RIEDEL%' OR ${ad_name} LIKE '%Duda Riedel%' THEN 'Duda Riedel'
