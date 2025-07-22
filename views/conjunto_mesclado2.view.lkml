@@ -79,6 +79,9 @@ view: conjunto_mesclado2 {
            WHEN ${ad_name} LIKE '%STEFFANE%' OR  ${ad_name} LIKE '%Steffane%' THEN 'Steffane'
            WHEN ${ad_name} LIKE '%THAYNARA%' OR  ${ad_name} LIKE '%Thaynara%' THEN 'Thaynara'
            WHEN ${ad_name} LIKE '%DRA. LILAN%' OR  ${ad_name} LIKE '%Dra. Lilan%' THEN 'Dra. Lilan'
+           WHEN ${ad_name} LIKE '%BRUNO MANOEL%' THEN 'Bruno Manoel'
+           WHEN ${ad_name} LIKE '%BRUNA TAI LOPES%' THEN 'Bruna Tai Lopes'
+           WHEN ${ad_name} LIKE '%Larissa Manoela%' THEN 'Larissa Manoela'
 
           WHEN ${ad_name} LIKE '%REEH AUGUSTO%' THEN 'Reeh Augusto'
           WHEN ${ad_name} LIKE '%THAUANE ALVES%' THEN 'Thauane Alves'
@@ -87,6 +90,8 @@ view: conjunto_mesclado2 {
           WHEN ${ad_name} LIKE '%GABI SELISTRE%' THEN 'Gabi Selistre'
           WHEN ${ad_name} LIKE '%JHONATA TEIXEIRA%' THEN 'Jhonata Teixeira'
           WHEN ${ad_name} LIKE '%EDY RIOS%' THEN 'Edy Rios'
+
+
 
            WHEN ${ad_name} LIKE '%DR ALEX LACERDA%' OR  ${ad_name} LIKE '%Alex Lacerda%' THEN 'Dr. Alex Lacerda'
            WHEN ${ad_name} LIKE '%THIAGO CORDOVA%' OR  ${ad_name} LIKE '%Thiago%' THEN 'Thiago'
@@ -101,7 +106,7 @@ view: conjunto_mesclado2 {
            WHEN ${ad_name} LIKE '%MABI MOREIRA%' OR  ${ad_name} LIKE '%Mabi Moreira%' THEN 'Mabi Moreira'
            WHEN ${ad_name} LIKE '%FLÁVIA LEAL%' OR ${ad_name} LIKE '%FLAVIA LEAL%' OR ${ad_name} LIKE '%Flavia Leal%' THEN 'Flavia Leal'
            WHEN ${ad_name} LIKE '%MAITÊ VOLPINI%' THEN 'Ale Kremer'
-           WHEN ${ad_name} LIKE '%FRAN REZENDE%' OR ${ad_name} LIKE '%Fran Rezende%' THEN 'Fran Rezende'
+           WHEN ${ad_name} LIKE '%FRAN REZENDE%' OR ${ad_name} LIKE '%Fran Rezende%'  OR ${ad_name} LIKE '%Fran Resende%' THEN 'Fran Rezende'
            WHEN ${ad_name} LIKE '%DUDA RIEDEL%' OR ${ad_name} LIKE '%Duda Riedel%' THEN 'Duda Riedel'
            WHEN ${ad_name} LIKE '%CAROLINA LEAL%' OR  ${ad_name} LIKE '%Carolina Leal%'THEN 'Carolina Leal'
            WHEN ${ad_name} LIKE '%GABI MAGSAN%' OR  ${ad_name} LIKE '%Gabi Magsan%' THEN 'Gabi Magsan'
