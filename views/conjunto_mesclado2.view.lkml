@@ -300,8 +300,8 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%Catarina%' OR  ${ad_group_name} LIKE '%CATARINA%' OR ${ad_name} LIKE '%Catarina %' THEN 'Catarina'
       WHEN ${ad_group_name} LIKE '%Emilly%' OR ${ad_name} LIKE '%Emilly%' THEN 'Emilly'
       WHEN ${ad_group_name} LIKE '%Cecilia%' OR  ${ad_group_name} LIKE '%CECÍLIA%' OR  ${ad_group_name} LIKE '%Cecília%' OR ${ad_name} LIKE '%Cecilia%'  THEN 'Cecília '
-
-
+      WHEN ${ad_name} LIKE '%Flavia%' THEN 'Flavia'
+      WHEN ${ad_name} LIKE '%Fran%' THEN 'Fran'
               END ;;
   }
 
