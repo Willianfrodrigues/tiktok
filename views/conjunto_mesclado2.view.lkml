@@ -90,7 +90,7 @@ view: conjunto_mesclado2 {
           WHEN ${ad_name} LIKE '%GABI SELISTRE%' THEN 'Gabi Selistre'
           WHEN ${ad_name} LIKE '%JHONATA TEIXEIRA%' THEN 'Jhonata Teixeira'
           WHEN ${ad_name} LIKE '%EDY RIOS%' THEN 'Edy Rios'
-
+          WHEN ${ad_name} LIKE '%MAYARA %' THEN 'Mayara'
 
 
            WHEN ${ad_name} LIKE '%DR ALEX LACERDA%' OR  ${ad_name} LIKE '%Alex Lacerda%' THEN 'Dr. Alex Lacerda'
