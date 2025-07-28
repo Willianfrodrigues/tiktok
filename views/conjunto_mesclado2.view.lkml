@@ -92,8 +92,8 @@ view: conjunto_mesclado2 {
           WHEN ${ad_name} LIKE '%EDY RIOS%' THEN 'Edy Rios'
           WHEN ${ad_name} LIKE '%MAYARA %' THEN 'Mayara'
 
-
-           WHEN ${ad_name} LIKE '%DR ALEX LACERDA%' OR  ${ad_name} LIKE '%Alex Lacerda%' THEN 'Dr. Alex Lacerda'
+           WHEN ${ad_name} LIKE '%KISY NA%'  OR  ${ad_name} LIKE '%Kisy Nascimento%'  THEN 'Kisy Nascimento'
+           WHEN ${ad_name} LIKE '%DR ALEX LACERDA%' OR  ${ad_name} LIKE '%Alex Lacerda%' OR  ${ad_name} LIKE '%Dr. Alex%'  THEN 'Dr. Alex Lacerda'
            WHEN ${ad_name} LIKE '%THIAGO CORDOVA%' OR  ${ad_name} LIKE '%Thiago%' THEN 'Thiago'
            WHEN ${ad_name} LIKE '%CAROL E NATI%' OR  ${ad_name} LIKE '%Carol e Nati%' THEN 'Carol e Nati'
            WHEN ${ad_name} LIKE '%YASMIN AKUTSU%' OR  ${ad_name} LIKE '%Yasmin Akutsu%' THEN 'Yasmin Akutsu'
