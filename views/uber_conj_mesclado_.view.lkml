@@ -49,6 +49,7 @@ view: uber_conj_mesclado_ {
   dimension: influenciador {
     type: string
     sql: CASE
+           WHEN ${ad_name} LIKE '%BRINO%' OR  ${ad_name} LIKE '%Brino%' THEN 'Brino'
 
           WHEN ${ad_name} LIKE '%BÁRBARA COURA %'OR ${ad_name} LIKE '%Barbara Coura%' THEN'Barbara Coura'
           WHEN ${ad_name} LIKE '%LUÍSA SOARES%' OR ${ad_name} LIKE '%Lu Soares%' THEN 'Luísa Soares'
