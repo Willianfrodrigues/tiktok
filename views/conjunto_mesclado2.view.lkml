@@ -167,7 +167,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE  '%MIRELLE MOSCHELLA%' OR ${ad_name} LIKE '%Mirelle Moschella%' THEN 'Mirelle Moschella'
       WHEN ${ad_name} LIKE '%ANA LUIZA%' THEN 'Ana Luiza'
       WHEN ${ad_name} LIKE '%CELSO ZUCATELLI %' THEN 'Celso Zucatelli'
-      WHEN ${ad_name} LIKE  '%LINDA LIS%' OR ${ad_name} LIKE '%Linda lis%' THEN 'Linda lis'
+      WHEN ${ad_name} LIKE  '%MAJU%' OR ${ad_name} LIKE '%Maju%' THEN 'Maju'
+
+      WHEN ${ad_name} LIKE  '%LINDA LIS%' OR ${ad_name} LIKE '%Linda lis%' OR ${ad_name} LIKE '%Linda Lins%' THEN 'Linda lis'
       WHEN ${ad_name} LIKE '%JADE%' THEN 'Jade'
       WHEN ${ad_name} LIKE '%NICOLE%' OR ${ad_group_name} LIKE '%NICOLE%' THEN 'Nicole'
       WHEN ${ad_name} LIKE '%MARIANA%' OR ${ad_group_name} LIKE '%MARIANA%' THEN 'Mariana'
