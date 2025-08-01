@@ -306,6 +306,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%Cecilia%' OR  ${ad_group_name} LIKE '%CECÍLIA%' OR  ${ad_group_name} LIKE '%Cecília%' OR ${ad_name} LIKE '%Cecilia%'  THEN 'Cecília '
       WHEN ${ad_name} LIKE '%Flavia%' THEN 'Flavia'
       WHEN ${ad_name} LIKE '%Fran%' THEN 'Fran'
+
+      WHEN LOWER(${ad_name}) LIKE '%May%' AND LOWER(${ad_name}) LIKE '%skala%' THEN 'Mayara'
+
               END ;;
   }
 
