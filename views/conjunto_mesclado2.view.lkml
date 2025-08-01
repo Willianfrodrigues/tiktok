@@ -307,7 +307,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%Flavia%' THEN 'Flavia'
       WHEN ${ad_name} LIKE '%Fran%' THEN 'Fran'
 
-      WHEN ${ad_name} ILIKE '%May%' AND ${ad_name} ILIKE '%Skala%' THEN 'May Skala'
+
 
               END ;;
   }
