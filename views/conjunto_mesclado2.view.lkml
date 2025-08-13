@@ -263,6 +263,8 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%SABRINA PAIVA%' THEN 'Sabrina Paiva'
       WHEN ${ad_name} LIKE '%MARINA IRIS%' THEN 'Marina Iris'
       WHEN ${ad_name} LIKE '%PAULA FEIJÓ%' THEN 'Paula Feijó'
+WHEN LOWER(${ad_name}) LIKE '%femme%' AND LOWER(${ad_name}) LIKE '%Gabriela%' THEN 'Gabriela Domingues'
+WHEN ${ad_name} ILIKE '%femme%' AND ${ad_name} ILIKE '%Gabriela%' THEN 'Gabriela Domingues'
 
       WHEN ${ad_name} LIKE '%JOYCE LIMA%' OR  ${ad_name} LIKE '%Joyce Lima%' THEN 'Joyce Lima'
       WHEN ${ad_name} LIKE '%SABRINA SATO%' THEN 'Sabrina Sato'
