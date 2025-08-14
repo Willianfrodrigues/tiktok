@@ -306,8 +306,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%Cecilia%' OR  ${ad_group_name} LIKE '%CECÍLIA%' OR  ${ad_group_name} LIKE '%Cecília%' OR ${ad_name} LIKE '%Cecilia%'  THEN 'Cecília '
       WHEN ${ad_name} LIKE '%Flavia%' THEN 'Flavia'
       WHEN ${ad_name} LIKE '%Fran%' THEN 'Fran'
-      WHEN ${ad_name} LIKE '%JU CASSINI%' THEN 'Ju Cassini'
+      WHEN ${ad_name} LIKE '%JU CASSINI%' OR  ${ad_group_name} LIKE '%Ju Cassini%' THEN 'Ju Cassini'
       WHEN ${ad_name} LIKE '%ROMULO NAVAJAS%' OR  ${ad_name} LIKE '%Romulo Navajas%' THEN 'Romulo Navajas'
+      WHEN ${ad_group_name} LIKE '%JAQUELINE GUERREIRO%' OR  ${ad_group_name} LIKE '%Jaqueline Guerreiro%'  THEN 'Jaqueline Guerreiro'
 
               END ;;
   }
