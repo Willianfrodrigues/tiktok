@@ -109,7 +109,7 @@ view: uber_conj_mesclado_ {
        WHEN ${ad_name} LIKE '%JENNI TISOVEC%' OR ${ad_name} LIKE '%JENNI TISOVEC%' OR ${ad_name} LIKE '%Jenni Tisovec%' THEN 'Jenni Tisovec'
        WHEN ${ad_name} LIKE '%VITOR BOURGUIGNON%' OR ${ad_name} LIKE '%Vitor Bourguignon%' THEN 'Vitor Bourguignon'
        WHEN ${ad_name} LIKE '%NICOLAS AVANSINI%' OR ${ad_name} LIKE '%Nicolas Avancini%' THEN 'Nicolas Avansini'
-
+         WHEN ${ad_name} LIKE '%LEO YOUNG%' THEN 'Leo Young'
 
 
 
