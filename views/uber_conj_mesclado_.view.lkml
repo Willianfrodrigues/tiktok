@@ -106,7 +106,7 @@ view: uber_conj_mesclado_ {
        WHEN ${ad_name} LIKE '%| Isa%' OR ${ad_name} LIKE '%Isa Scherer%' THEN 'Isa Scherer'
 
        WHEN ${ad_name} LIKE '%WELLINTON GONCALVES%' OR ${ad_name} LIKE '%WELL GONCALVES%' OR ${ad_name} LIKE '%Well Goncalves%' THEN 'Wellinton Goncalves'
-       WHEN ${ad_name} LIKE '%JENNI TISOVEC%' OR ${ad_name} LIKE '%JENNI TISOVEC%' OR ${ad_name} LIKE '%Jenni Tisovec%' THEN 'Jenni Tisovec'
+       WHEN ${ad_name} LIKE '%JENNI TISOVEC%' OR ${ad_name} LIKE '%JENNI TISOVEC%' OR ${ad_name} LIKE '%Jenni Tisovec%' OR ${ad_name} LIKE '%Air Fryer 2025 | Awareness | Jenni%' THEN 'Jenni Tisovec'
        WHEN ${ad_name} LIKE '%VITOR BOURGUIGNON%' OR ${ad_name} LIKE '%Vitor Bourguignon%' THEN 'Vitor Bourguignon'
        WHEN ${ad_name} LIKE '%NICOLAS AVANSINI%' OR ${ad_name} LIKE '%Nicolas Avancini%' THEN 'Nicolas Avansini'
          WHEN ${ad_name} LIKE '%LEO YOUNG%' THEN 'Leo Young'
