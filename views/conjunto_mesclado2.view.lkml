@@ -63,6 +63,10 @@ view: conjunto_mesclado2 {
   dimension: influenciador {
     type: string
     sql: CASE
+
+           WHEN ${ad_name} LIKE '%Ludmila Bastos%' OR  ${ad_name} LIKE '%LUDMILA BASTOS%' THEN 'Ludmila Bastos'
+           WHEN ${ad_name} LIKE '%Dandara Barbosa%' OR  ${ad_name} LIKE '%DANDARA BARBOSA%' THEN 'Dandara Barbosa'
+
            WHEN ${ad_name} LIKE '%BRINO%' OR  ${ad_name} LIKE '%Brino%' THEN 'Brino'
 
            WHEN ${ad_name} LIKE '%CLARA DINIZ%' OR  ${ad_name} LIKE '%Clara Diniz%' THEN 'Clara Diniz'
@@ -311,6 +315,9 @@ view: conjunto_mesclado2 {
       WHEN ${ad_group_name} LIKE '%JAQUELINE GUERREIRO%' OR  ${ad_group_name} LIKE '%Jaqueline Guerreiro%' OR  ${ad_name} LIKE '%Jaqueline Guerreiro%'   THEN 'Jaqueline Guerreiro'
       WHEN ${ad_name} LIKE '%PEEWEE%'  OR ${ad_name} LIKE '%Peewee%' THEN 'Peewee'
       WHEN ${ad_name} LIKE '%Evandro%'  OR ${ad_name} LIKE '%EVANDRO MANCHINI%' THEN 'Evandro Manchini'
+
+
+
               END ;;
   }
 
