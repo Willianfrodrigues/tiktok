@@ -310,7 +310,7 @@ view: conjunto_mesclado2 {
       WHEN ${ad_name} LIKE '%ROMULO NAVAJAS%' OR  ${ad_name} LIKE '%Romulo Navajas%' THEN 'Romulo Navajas'
       WHEN ${ad_group_name} LIKE '%JAQUELINE GUERREIRO%' OR  ${ad_group_name} LIKE '%Jaqueline Guerreiro%' OR  ${ad_name} LIKE '%Jaqueline Guerreiro%'   THEN 'Jaqueline Guerreiro'
       WHEN ${ad_name} LIKE '%PEEWEE%'  OR ${ad_name} LIKE '%Peewee%' THEN 'Peewee'
-
+      WHEN ${ad_name} LIKE '%Evandro%'  OR ${ad_name} LIKE '%EVANDRO MANCHINI%' THEN 'Evandro Manchini'
               END ;;
   }
 
